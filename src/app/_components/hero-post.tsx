@@ -1,31 +1,10 @@
-import Avatar from "@/app/_components/avatar";
-import CoverImage from "@/app/_components/cover-image";
-import { type Author } from "@/interfaces/author";
-import Link from "next/link";
-import DateFormatter from "./date-formatter";
 import Image from "next/image";
 import { StorwayLogo } from "./icons/StorwayLogo";
 
-type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  author: Author;
-  slug: string;
-};
-
-export function HeroPost({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) {
+export function HeroPost() {
   return (
     <section className="">
-      <div className=" relative bg-gradient-to-b from-primary to-white grid h-screen items-center gap-14 md:grid-cols-2 lg:gap-6 py-16 md:py-22 lg:py-28 px-6 md:px-24">
+      <div className=" relative bg-gradient-to-b from-primary to-white grid h-screen items-center gap-14 md:grid-cols-2 lg:gap-6 py-32 md:py-22 lg:py-28 px-6 md:px-24">
         <div className="flex flex-col justify-start items-start space-y-4">
           <div className="space-y-2">
             <div className="flex  justify-start items-center gap-2">
@@ -45,7 +24,7 @@ export function HeroPost({
             </p>
           </div>
           <div className="flex gap-4 min-[400px]:flex-row mt-12">
-            <div className="cursor-pointer bg-primary px-6 py-2 rounded-lg">
+            <div className="cursor-pointer bg-primary px-6 py-2 rounded-lg border-2 border-transparent">
               <p className="text-xl text-white ">Contact us</p>
             </div>
             <a

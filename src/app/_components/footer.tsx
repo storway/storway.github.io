@@ -1,5 +1,3 @@
-import Container from "@/app/_components/container";
-import { EXAMPLE_PATH } from "@/lib/constants";
 import { StorwayLogo } from "./icons/StorwayLogo";
 
 export function Footer() {
