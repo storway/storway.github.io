@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Instagram, Menu, PawPrint, X } from "lucide-react";
 import Link from "next/link";
 import { StorwayLogo } from "../icons/StorwayLogo";
+import { CloseIcon } from "../icons/CloseIcon";
+import { MenuIcon } from "../icons/MenuIcon";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ export const Navbar = () => {
         </div>
 
         <button className="md:hidden" onClick={handleClick}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
 
