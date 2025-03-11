@@ -21,14 +21,21 @@ const CoverImage = ({ title, src, slug }: Props) => {
     />
   );
   return (
+    // <div className="relative w-full overflow-hidden aspect-video">
+    //   {/* <iframe
+    //     className="absolute top-0 left-0 w-full h-full"
+    //     src="https://www.youtube.com/embed/K8mK8BzqrPE"
+    //     // frameborder="0"
+    //     // allowfullscreen
+    //   ></iframe> */}
+    // </div>
     <div className="sm:mx-0">
-      {slug ? (
-        <Link href={`/posts/${slug}`} aria-label={title}>
-          {image}
-        </Link>
-      ) : (
-        image
-      )}
+      <iframe
+        src="/images/storway-logo.png"
+        // allowFullScreen
+        width={1300}
+        height={630}
+      />
     </div>
   );
 };

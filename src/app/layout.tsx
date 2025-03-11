@@ -1,17 +1,19 @@
 import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Baloo_2 } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
+import { Navbar } from "./_components/navbar/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Baloo_2({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `${CMS_NAME} Digital Retail`,
+  description: `${CMS_NAME} Digital Retail Solutions - Prenez le chemin du magasin connecté
+.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -23,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <head>
         <link
           rel="apple-touch-icon"
@@ -60,7 +62,8 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
-        <ThemeSwitcher />
+        <Navbar />
+        {/* <ThemeSwitcher /> */}
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
