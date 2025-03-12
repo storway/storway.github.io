@@ -1,12 +1,17 @@
 import React from "react";
 
-export const StorwayLogo = () => {
+interface StorwayLogoProps {
+  width?: number;
+  height?: number;
+}
+
+export const StorwayLogo = ({ width, height }: StorwayLogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 67.71 39.52"
-      width="100"
-      height="60"
+      width={width ?? "100%"}
+      height={height ?? "100%"}
     >
       <path
         fill="#e3765c"

@@ -6,31 +6,46 @@ import { StorwayLogo } from "../icons/StorwayLogo";
 import { CloseIcon } from "../icons/CloseIcon";
 import { MenuIcon } from "../icons/MenuIcon";
 
-export const Navbar = () => {
+interface NavbarProps {
+  scrollToContact: () => void;
+  scrollToTop: () => void;
+}
+
+export const Navbar = ({ scrollToContact, scrollToTop }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleClickAbout = () => {};
-  const handleClickContact = () => {};
+  const handleClickHome = (e: { preventDefault: () => void }) => {
+    scrollToTop();
+    setIsOpen(false);
+  };
+
+  const handleClickContact = () => {
+    scrollToContact();
+    setIsOpen(false);
+  };
   return (
-    <nav className=" bg-slate-100 fixed z-10 w-full px-6 shadow-lg h-auto ">
+    <nav className=" bg-white text-gray-800 flex justify-center items-center fixed z-10 w-full px-6 shadow-md h-20 ">
       <div className="flex w-full items-center justify-between ">
         <Link className="flex justify-center items-center gap-2" href="/">
-          <StorwayLogo />
-          {/* <PawPrint color="black" /> */}
-          {/* <h1 className="text-4xl">Storway</h1> */}
+          <StorwayLogo width={70} />
+          <h1 className="text-4xl font-semibold">Storway</h1>
         </Link>
 
         <div className="hidden space-x-6 md:flex text-2xl">
-          <Link href="/" className="cursor-pointer hover:text-gray-400">
-            Home
-          </Link>
           <a
             href="#"
-            className="cursor-pointer hover:text-gray-400"
+            className="cursor-pointer hover:text-gray-400 hover:underline"
+            onClick={handleClickHome}
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="cursor-pointer hover:text-gray-400 hover:underline"
             onClick={handleClickContact}
           >
             Contact
@@ -47,6 +62,7 @@ export const Navbar = () => {
           <a
             href="#"
             className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
+            onClick={handleClickHome}
           >
             Home
           </a>
