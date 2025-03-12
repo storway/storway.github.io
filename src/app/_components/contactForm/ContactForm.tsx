@@ -38,8 +38,9 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                             Contact us !
                         </h2>
                         <p className="mx-auto max-w-lg text-gray-600">
-                            Fill out the form below and our team will get in
-                            touch.
+                            To know more about the product, partnership
+                            opportunities and whether DigiCart deployment is
+                            available in your network.
                         </p>
                     </div>
                     <div className="mx-auto max-w-3xl rounded-lg bg-white p-6 shadow">
@@ -108,6 +109,21 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         id="country"
                                         name="country"
                                         type="text"
+                                        className="w-full rounded border p-2"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label
+                                        htmlFor="name"
+                                        className="block font-medium"
+                                    >
+                                        Phone number
+                                    </label>
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="phone"
                                         className="w-full rounded border p-2"
                                         required
                                     />

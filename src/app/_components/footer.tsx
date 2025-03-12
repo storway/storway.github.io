@@ -1,13 +1,9 @@
+import Link from 'next/link'
 import { StorwayLogo } from './icons/StorwayLogo'
 
-interface FooterProps {
-    scrollToTop: () => void
-    scrollToContact: () => void
-}
-
-const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
+const Footer = () => {
     return (
-        <footer className="bg-white py-8 text-gray-800">
+        <footer className="border-t border-gray-400 bg-white py-8 text-gray-800">
             <div className="container mx-auto grid grid-cols-1 gap-6 px-6 md:grid-cols-3">
                 {/* Column 1: Logo & Description */}
                 <div>
@@ -16,7 +12,7 @@ const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
                         <h2 className="text-xl font-bold">Storway</h2>
                     </div>
                     <p className="mt-2 text-gray-600">
-                        Turn your clients into VIPs.
+                        Offer your clients the VIP shopping experience
                     </p>
                 </div>
 
@@ -24,30 +20,33 @@ const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
                 <div>
                     <h3 className="text-lg font-semibold">Quick Links</h3>
                     <ul className="mt-2">
-                        <li onClick={scrollToTop}>
-                            <a
-                                href="#"
+                        <li>
+                            <Link
+                                href="/"
                                 className="text-gray-600 hover:text-gray-900"
                             >
                                 Home
-                            </a>
+                            </Link>
                         </li>
-                        {/* <li>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                About
-              </a>
-            </li> */}
-                        <li onClick={scrollToContact}>
-                            <a
-                                href="#"
+                        <li>
+                            <Link
+                                href="/contact"
                                 className="text-gray-600 hover:text-gray-900"
                             >
                                 Contact
-                            </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/about"
+                                className="text-gray-600 hover:text-gray-900"
+                            >
+                                About us
+                            </Link>
                         </li>
                     </ul>
                 </div>
-
+                {/* !!!!! Keep for future implementation !!!! */}
                 {/* Column 3: Social Media */}
                 {/* <div>
           <h3 className="text-lg font-semibold">Follow Us</h3>
@@ -66,7 +65,7 @@ const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
             </div>
 
             {/* Bottom Row */}
-            <div className="mt-6 border-t border-gray-400 pt-4 text-center text-sm text-gray-600">
+            <div className="mt-6 pt-4 text-center text-sm text-gray-600">
                 <p>
                     &copy; {new Date().getFullYear()} Storway. All rights
                     reserved.
@@ -82,43 +81,3 @@ const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
 }
 
 export default Footer
-
-// import { StorwayLogo } from "./icons/StorwayLogo";
-
-// interface FooterProps {
-//   scrollToTop: () => void;
-//   scrollToContact: () => void;
-// }
-
-// export function Footer({ scrollToTop, scrollToContact }: FooterProps) {
-//   return (
-//     <footer className=" w-full flex flex-col justify-between items-center relative bg-gray-200 dark:bg-slate-800 mt-32 pb-4 border-t-2 border-gray-100 shadow-lg">
-//       <div className="pt-6 pb-2 flex flex-col gap-4 items-center">
-//         <div className="flex gap-2 items-center">
-//           <StorwayLogo height={50} width={70} />
-//           <h3 className="text-4xl lg:text-[2.5rem] font-semibold tracking-tighter leading-tight text-center lg:text-left  lg:pr-4 lg:w-1/2">
-//             Storway
-//           </h3>
-//         </div>
-
-//         <div className="flex justify-center items-center gap-2">
-//           <p
-//             className="text-l text-nowrap underline cursor-pointer"
-//             onClick={scrollToTop}
-//           >
-//             Back to top
-//           </p>
-//           <p
-//             className="text-l text-nowrap underline cursor-pointer"
-//             onClick={scrollToContact}
-//           >
-//             Contact us
-//           </p>
-//         </div>
-//       </div>
-//       <div className="text-xs ">© 2025 Storway.com</div>
-//     </footer>
-//   );
-// }
-
-// export default Footer;

@@ -1,32 +1,19 @@
-import { CheckCircle, ShieldCheck, ShoppingCart, BarChart2 } from 'lucide-react'
+import { BarChart2 } from 'lucide-react'
 import { BurglarIcon } from '../icons/BurglarIcon'
 import { RibbonIcon } from '../icons/RibbonIcon'
 import { KartIcon } from '../icons/KartIcon'
 
 const promises = [
     {
-        icon: (
-            <RibbonIcon />
-            // <CheckCircle className="text-green-500" height={100} width={100} />
-        ),
+        icon: <RibbonIcon />,
         text: 'Improve Client Experience',
     },
     {
-        icon: (
-            <BurglarIcon />
-            // <ShieldCheck className="text-blue-500" height={100} width={100} />
-        ),
+        icon: <BurglarIcon />,
         text: 'Reduce Fraud',
     },
     {
-        icon: (
-            <KartIcon />
-            // <ShoppingCart
-            //     className="text-orange-500"
-            //     height={100}
-            //     width={100}
-            // />
-        ),
+        icon: <KartIcon />,
         text: 'Increase Basket Size',
     },
     {
@@ -41,13 +28,13 @@ export default function Promises() {
     return (
         <div className="my-32 flex flex-col items-center justify-center">
             <h2 className="text-center text-2xl font-semibold sm:text-4xl md:text-5xl">
-                What DigiCart Delivers: 4 Key Benefits
+                DigiCart delivers 4 key benefits
             </h2>
             <div className="my-8 flex flex-col items-center justify-center gap-4 p-4 sm:flex-wrap md:flex-row">
                 {promises.map((promise, index) => (
                     <div
                         key={index}
-                        className="flex h-64 w-64 flex-col items-center justify-center gap-4 rounded-xl border border-primary bg-white p-4 shadow-md"
+                        className="flex h-64 w-64 flex-col items-center justify-center gap-4 rounded-lg border border-primary bg-white p-4 shadow-md"
                     >
                         <div className="flex items-center">{promise.icon}</div>
                         <span className="text-center text-2xl font-semibold">

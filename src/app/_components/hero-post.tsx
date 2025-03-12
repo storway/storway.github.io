@@ -1,45 +1,25 @@
 import Image from 'next/image'
 import { CardSpacer } from './spacer/CardSpacer'
-import { ShieldCheck } from 'lucide-react'
 import { ShieldIcon } from './icons/ShieldIcon'
+import Link from 'next/link'
+import { ContactButton } from './buttons/ContactButton'
 
-interface HeroPostProps {
-    scrollToContact: () => void
-}
-
-export function HeroPost({ scrollToContact }: HeroPostProps) {
+export function HeroPost() {
     return (
         <section className="">
             <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:grid-cols-2 md:px-24 lg:gap-6 lg:py-28">
                 <div className="flex flex-col items-start justify-start space-y-4">
                     <div className="space-y-2">
-                        {/* <div className="flex  justify-start items-center gap-2">
-              <div className="h-12 sm:h-20">
-                <StorwayLogo />
-              </div>
-              <h1 className="text-5xl font-semibold tracking-tighter sm:text-6xl md:text-7xl">
-                Storway
-              </h1>
-            </div> */}
                         <h1 className="text-5xl font-semibold">
-                            Turn your clients into VIPs with our DigiCart
+                            Offer your clients the VIP shopping experience
                         </h1>
                         <p className="text-muted-foreground max-w-[600px] md:text-xl">
-                            No more waiting. Instant info. Exclusive deals.
-                        </p>
-                        <p className="text-muted-foreground max-w-[600px] md:text-xl">
-                            A VIP experience every time you shop.
+                            Cut the queue. Personalised information and advice.
+                            Exclusive offers.
                         </p>
                     </div>
                     <div className="mt-12 flex gap-4 min-[400px]:flex-row">
-                        <div
-                            className="flex cursor-pointer items-center justify-center rounded-lg border-2 border-transparent bg-primary px-6 py-2"
-                            onClick={scrollToContact}
-                        >
-                            <p className="text-nowrap text-xl text-white">
-                                Contact us
-                            </p>
-                        </div>
+                        <ContactButton />
                         <a
                             href="#learn-more-section"
                             className="flex cursor-pointer items-center justify-center rounded-lg border-2 border-black px-6 py-2"
@@ -51,6 +31,7 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                 <div className="flex items-center justify-center">
                     <div className="relative overflow-hidden">
                         <Image
+                            priority
                             src={'/images/digi-cart-handle.webp'}
                             alt={`Cover Image for digiCart`}
                             className="object-cover"
@@ -68,25 +49,18 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                     className="mb-6 flex items-center justify-center sm:mb-16"
                 >
                     <h2 className="text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
-                        Your Shopping, Reinvented.
+                        Shopping, reinvented
                     </h2>
                 </div>
                 {/* VIPs */}
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                     <div>
                         <h3 className="mb-4 text-3xl leading-tight lg:text-4xl">
-                            VIP Shopping, Simplified
+                            VIP shopping in retail stores
                         </h3>
                         <p className="mb-4 text-lg leading-relaxed">
-                            Give your customers the experience they deserve with
-                            our smart tablet system. Just grab a cart, attach
-                            the tablet, scan items, pay, and go. Enjoy priority
-                            service, personalized offers, and a seamless
-                            journey—shopping has never been this effortless!
-                            {/* Give your customers the shopping experience they deserve. With our
-              smart tablet system, every shopper enjoys priority service,
-              personalized offers, and total control over their journey.
-              Shopping has never felt this exclusive! */}
+                            Effortless shopping: skip the queue, keep shopping
+                            items in the cart, and hassle-free payment.
                         </p>
                     </div>
                     <div className="flex items-center justify-center">
@@ -106,7 +80,7 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                     <div className="flex items-center justify-center">
                         <div className="relative overflow-hidden">
                             <Image
-                                src={'/images/digi-cart-click.webp'}
+                                src={'/images/digi-cart-side.webp'}
                                 alt={`Cover Image for digiCart ads`}
                                 className="object-cover"
                                 width={1300}
@@ -116,18 +90,11 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                     </div>
                     <div>
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
-                            {/* Designed for Any Cart, Ready for Every Shopper. */}
-                            The DigiCart: Smart, Seamless, and Flexible
+                            Introducing the DigiCart
                         </h3>
                         <p className="mb-4 text-lg leading-relaxed">
-                            Our tablet adapts to any cart, ensuring a perfect
-                            fit every time. Whether in a supermarket, wholesale
-                            store, or convenience shop, the VIP experience stays
-                            effortless for every shopper.
-                            {/* Our tablet seamlessly adapts to any trolley handle, ensuring a
-              perfect fit no matter the cart type. Whether in a supermarket,
-              wholesale store, or convenience shop, the VIP experience stays
-              smooth and effortless for every customer. */}
+                            The DigiCart: light, durable, flexible, and
+                            effortless clip-on. Smart, powerful and flexible.
                         </p>
                     </div>
                 </div>
@@ -136,18 +103,11 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                     <div>
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
                             The Retail Media Display: Smart Ads, Instant Impact
-                            {/* No more waiting. Instant info. Exclusive deals. */}
                         </h3>
                         <p className="mb-4 text-lg leading-relaxed">
-                            Engage shoppers with targeted ads while they scan
-                            and shop. Our trolley-mounted tablet delivers
-                            real-time deals, product info, and seamless
-                            checkout—turning every cart into a dynamic retail
-                            media platform.
-                            {/* Say goodbye to long checkout lines! Our trolley-mounted tablets
-              let customers scan and pay on the go, access real-time product
-              details, and unlock special offers—right when they need them.
-              Fast, smart, seamless. */}
+                            Engage shoppers with targeted ads while they shop.
+                            Deliver real-time deals and product info. Turn every
+                            cart into a dynamic retail media platform.
                         </p>
                     </div>
                     <div className="flex items-center justify-center">
@@ -171,14 +131,12 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                     </div>
                     <div>
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
-                            Secure & Compliant: Smart Protection, Total Trust
+                            Protecting Your Business, Customers & Data with
+                            Confidence.
                         </h3>
                         <p className="mb-4 text-lg leading-relaxed">
-                            Protect your business and your customers with
-                            advanced cybersecurity and full GDPR compliance. Our
-                            system safeguards shopper data while ensuring a
-                            seamless experience—secure transactions, encrypted
-                            connections, and total peace of mind.
+                            Fraud protection. Cyber secure by design. Upholding
+                            the highest standards of data privacy.
                         </p>
                     </div>
                 </div>
