@@ -1,47 +1,55 @@
-import { StorwayLogo } from "./icons/StorwayLogo";
+import { StorwayLogo } from './icons/StorwayLogo'
 
 interface FooterProps {
-  scrollToTop: () => void;
-  scrollToContact: () => void;
+    scrollToTop: () => void
+    scrollToContact: () => void
 }
 
 const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
-  return (
-    <footer className="bg-gray-200 text-gray-800 py-8">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Column 1: Logo & Description */}
-        <div>
-          <div className="flex justify-start items-center gap-1">
-            <StorwayLogo width={40} height={35} />
-            <h2 className="text-xl font-bold">Storway</h2>
-          </div>
-          <p className="text-gray-600 mt-2">Turn your clients into VIPs.</p>
-        </div>
+    return (
+        <footer className="bg-white py-8 text-gray-800">
+            <div className="container mx-auto grid grid-cols-1 gap-6 px-6 md:grid-cols-3">
+                {/* Column 1: Logo & Description */}
+                <div>
+                    <div className="flex items-center justify-start gap-1">
+                        <StorwayLogo width={40} height={35} />
+                        <h2 className="text-xl font-bold">Storway</h2>
+                    </div>
+                    <p className="mt-2 text-gray-600">
+                        Turn your clients into VIPs.
+                    </p>
+                </div>
 
-        {/* Column 2: Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold">Quick Links</h3>
-          <ul className="mt-2">
-            <li onClick={scrollToTop}>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Home
-              </a>
-            </li>
-            {/* <li>
+                {/* Column 2: Quick Links */}
+                <div>
+                    <h3 className="text-lg font-semibold">Quick Links</h3>
+                    <ul className="mt-2">
+                        <li onClick={scrollToTop}>
+                            <a
+                                href="#"
+                                className="text-gray-600 hover:text-gray-900"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        {/* <li>
               <a href="#" className="text-gray-600 hover:text-gray-900">
                 About
               </a>
             </li> */}
-            <li onClick={scrollToContact}>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+                        <li onClick={scrollToContact}>
+                            <a
+                                href="#"
+                                className="text-gray-600 hover:text-gray-900"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        {/* Column 3: Social Media */}
-        {/* <div>
+                {/* Column 3: Social Media */}
+                {/* <div>
           <h3 className="text-lg font-semibold">Follow Us</h3>
           <div className="flex mt-2 space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-900 text-2xl">
@@ -55,22 +63,25 @@ const Footer = ({ scrollToTop, scrollToContact }: FooterProps) => {
             </a>
           </div>
         </div> */}
-      </div>
+            </div>
 
-      {/* Bottom Row */}
-      <div className="border-t border-gray-400 mt-6 pt-4 text-center text-gray-600 text-sm">
-        <p>&copy; {new Date().getFullYear()} Storway. All rights reserved.</p>
-        <p>
-          <a href="#" className="hover:underline">
-            Privacy Policy
-          </a>
-        </p>
-      </div>
-    </footer>
-  );
-};
+            {/* Bottom Row */}
+            <div className="mt-6 border-t border-gray-400 pt-4 text-center text-sm text-gray-600">
+                <p>
+                    &copy; {new Date().getFullYear()} Storway. All rights
+                    reserved.
+                </p>
+                <p>
+                    <a href="#" className="hover:underline">
+                        Privacy Policy
+                    </a>
+                </p>
+            </div>
+        </footer>
+    )
+}
 
-export default Footer;
+export default Footer
 
 // import { StorwayLogo } from "./icons/StorwayLogo";
 
