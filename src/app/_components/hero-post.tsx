@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { StorwayLogo } from './icons/StorwayLogo'
+import { CardSpacer } from './spacer/CardSpacer'
 
 interface HeroPostProps {
     scrollToContact: () => void
@@ -99,7 +100,7 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                         </div>
                     </div>
                 </div>
-                <div className="mx-auto my-16 flex h-[1px] w-1/2 items-center justify-center bg-primary" />
+                <CardSpacer />
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                     <div className="flex items-center justify-center">
                         <div className="relative overflow-hidden">
@@ -129,7 +130,7 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                         </p>
                     </div>
                 </div>
-                <div className="mx-auto my-16 flex h-[1px] w-1/2 items-center justify-center bg-primary" />
+                <CardSpacer />
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                     <div>
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
