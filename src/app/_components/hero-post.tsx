@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { StorwayLogo } from './icons/StorwayLogo'
 import { CardSpacer } from './spacer/CardSpacer'
+import { ShieldCheck } from 'lucide-react'
+import { ShieldIcon } from './icons/ShieldIcon'
 
 interface HeroPostProps {
     scrollToContact: () => void
@@ -159,6 +160,26 @@ export function HeroPost({ scrollToContact }: HeroPostProps) {
                                 height={630}
                             />
                         </div>
+                    </div>
+                </div>
+                <CardSpacer />
+                <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
+                    <div className="flex items-center justify-center">
+                        <div className="relative overflow-hidden">
+                            <ShieldIcon />
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
+                            Secure & Compliant: Smart Protection, Total Trust
+                        </h3>
+                        <p className="mb-4 text-lg leading-relaxed">
+                            Protect your business and your customers with
+                            advanced cybersecurity and full GDPR compliance. Our
+                            system safeguards shopper data while ensuring a
+                            seamless experience—secure transactions, encrypted
+                            connections, and total peace of mind.
+                        </p>
                     </div>
                 </div>
             </div>
