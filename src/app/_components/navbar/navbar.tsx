@@ -6,9 +6,12 @@ import { StorwayLogo } from '../icons/StorwayLogo'
 import { CloseIcon } from '../icons/CloseIcon'
 import { MenuIcon } from '../icons/MenuIcon'
 import { ContactButton } from '../buttons/ContactButton'
+import { useRouter, usePathname } from 'next/navigation'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const router = useRouter()
+    const pathname = usePathname()
 
     const handleClick = () => {
         setIsOpen(!isOpen)
@@ -22,8 +25,21 @@ export const Navbar = () => {
         setIsOpen(false)
     }
 
-    const handleClickAbout = () => {
+    const handleClickAbout = (
+        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    ) => {
+        e.preventDefault()
         setIsOpen(false)
+
+        if (pathname === '/') {
+            const aboutSection = document.getElementById('about')
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' })
+            }
+        } else {
+            // Navigate to home, then scroll after page loads
+            router.push('/#about')
+        }
     }
     return (
         <nav className="fixed z-10 flex h-20 w-full items-center justify-center bg-white px-6 text-gray-800 shadow-md">
@@ -43,20 +59,15 @@ export const Navbar = () => {
                     >
                         Home
                     </Link>
-                    {/* <Link
-                        href="/contact"
-                        className="cursor-pointer hover:text-gray-400 hover:underline"
-                    >
-                        Contact
-                    </Link> */}
                     <Link
-                        href="/about"
+                        href="#about"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
+                        onClick={handleClickAbout}
                     >
                         About us
                     </Link>
                 </div>
-                <ContactButton />
+                <ContactButton hidden />
 
                 <button className="md:hidden" onClick={handleClick}>
                     {isOpen ? <CloseIcon /> : <MenuIcon />}
@@ -78,10 +89,10 @@ export const Navbar = () => {
                         className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
                         onClick={handleClickContact}
                     >
-                        Contact
+                        Contact us
                     </Link>
                     <Link
-                        href="/about"
+                        href="#about"
                         className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
                         onClick={handleClickAbout}
                     >

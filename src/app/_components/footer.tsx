@@ -1,9 +1,30 @@
+'use client'
+
 import Link from 'next/link'
 import { StorwayLogo } from './icons/StorwayLogo'
+import { useRouter, usePathname } from 'next/navigation'
 
 const Footer = () => {
+    const router = useRouter()
+    const pathname = usePathname()
+
+    const handleClickAbout = (
+        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    ) => {
+        e.preventDefault()
+
+        if (pathname === '/') {
+            const aboutSection = document.getElementById('about')
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' })
+            }
+        } else {
+            // Navigate to home, then scroll after page loads
+            router.push('/#about')
+        }
+    }
     return (
-        <footer className="border-t border-gray-400 bg-white py-8 text-gray-800">
+        <footer className="bg-white py-8 text-gray-800">
             <div className="container mx-auto grid grid-cols-1 gap-6 px-6 md:grid-cols-3">
                 {/* Column 1: Logo & Description */}
                 <div>
@@ -33,13 +54,14 @@ const Footer = () => {
                                 href="/contact"
                                 className="text-gray-600 hover:text-gray-900"
                             >
-                                Contact
+                                Contact us
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="/about"
+                                href="#about"
                                 className="text-gray-600 hover:text-gray-900"
+                                onClick={handleClickAbout}
                             >
                                 About us
                             </Link>

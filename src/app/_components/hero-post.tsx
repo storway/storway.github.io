@@ -11,7 +11,7 @@ export function HeroPost() {
                 <div className="flex flex-col items-start justify-start space-y-4">
                     <div className="space-y-2">
                         <h1 className="text-5xl font-semibold">
-                            Offer your clients the VIP shopping experience
+                            In store VIP shopping experience
                         </h1>
                         <p className="text-muted-foreground max-w-[600px] md:text-xl">
                             Cut the queue. Personalised information and advice.
@@ -56,11 +56,13 @@ export function HeroPost() {
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                     <div>
                         <h3 className="mb-4 text-3xl leading-tight lg:text-4xl">
-                            VIP shopping in retail stores
+                            Effortless shopping
                         </h3>
                         <p className="mb-4 text-lg leading-relaxed">
-                            Effortless shopping: skip the queue, keep shopping
-                            items in the cart, and hassle-free payment.
+                            Clip on the DigiCart, scan items, keep them in your
+                            cart, and pay.
+                            {/* Effortless shopping: skip the queue, keep shopping
+                            items in the cart, and hassle-free payment. */}
                         </p>
                     </div>
                     <div className="flex items-center justify-center">
@@ -92,22 +94,29 @@ export function HeroPost() {
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
                             Introducing the DigiCart
                         </h3>
-                        <p className="mb-4 text-lg leading-relaxed">
-                            The DigiCart: light, durable, flexible, and
-                            effortless clip-on. Smart, powerful and flexible.
+                        <p className="text-lg leading-relaxed">
+                            Light, durable, flexible, and easy clip-on.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Smart, powerful and flexible.
                         </p>
                     </div>
                 </div>
                 <CardSpacer />
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
-                    <div>
+                    <div className="mb-4">
                         <h3 className="my-4 text-3xl leading-tight lg:text-4xl">
-                            The Retail Media Display: Smart Ads, Instant Impact
+                            Retail Media Display: Smart Ads, Instant Impact
                         </h3>
-                        <p className="mb-4 text-lg leading-relaxed">
+                        <p className="text-lg leading-relaxed">
                             Engage shoppers with targeted ads while they shop.
-                            Deliver real-time deals and product info. Turn every
-                            cart into a dynamic retail media platform.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Deliver real-time deals and product info.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Turn every cart into a dynamic retail media
+                            platform.
                         </p>
                     </div>
                     <div className="flex items-center justify-center">
@@ -134,9 +143,14 @@ export function HeroPost() {
                             Protecting Your Business, Customers & Data with
                             Confidence.
                         </h3>
-                        <p className="mb-4 text-lg leading-relaxed">
-                            Fraud protection. Cyber secure by design. Upholding
-                            the highest standards of data privacy.
+                        <p className="text-lg leading-relaxed">
+                            Fraud protection.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Cyber secure by design.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Upholding the highest standards of data privacy.
                         </p>
                     </div>
                 </div>
