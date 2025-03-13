@@ -49,21 +49,21 @@ export function HeroPost() {
                     className="mb-6 flex items-center justify-center sm:mb-16"
                 >
                     <h2 className="text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
-                        Shopping, reinvented
+                        A smart trolley ...
                     </h2>
                 </div>
                 {/* VIPs */}
                 <div className="mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                     <div>
                         <h3 className="mb-4 text-3xl leading-tight lg:text-4xl">
-                            Effortless shopping
+                            ... for effortless shopping
                         </h3>
-                        <p className="mb-4 text-lg leading-relaxed">
-                            Clip on the DigiCart, scan items, keep them in your
-                            cart, and pay.
-                            {/* Effortless shopping: skip the queue, keep shopping
-                            items in the cart, and hassle-free payment. */}
+                        <p className="text-lg leading-relaxed">Clip on,</p>
+                        <p className="text-lg leading-relaxed">scan items,</p>
+                        <p className="text-lg leading-relaxed">
+                            keep them in your cart,
                         </p>
+                        <p className="text-lg leading-relaxed">and pay.</p>
                     </div>
                     <div className="flex items-center justify-center">
                         <div className="relative overflow-hidden">
@@ -95,7 +95,7 @@ export function HeroPost() {
                             Introducing the DigiCart
                         </h3>
                         <p className="text-lg leading-relaxed">
-                            Light, durable, flexible, and easy clip-on.
+                            Light, durable, flexible, and easy to clip-on.
                         </p>
                         <p className="text-lg leading-relaxed">
                             Smart, powerful and flexible.
