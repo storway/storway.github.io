@@ -9,11 +9,19 @@ import Footer from './_components/footer'
 const inter = Baloo_2({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: `${CMS_NAME} Digital Retail`,
-    description: `${CMS_NAME} Digital Retail Solutions - Prenez le chemin du magasin connecté
-.`,
+    title: `${CMS_NAME}`,
+    description: `${CMS_NAME} Digital Retail Solutions - Offer your clients the VIP shopping experience.`,
     openGraph: {
-        images: [HOME_OG_IMAGE_URL],
+        title: 'Storway',
+        description: 'Offer your clients the VIP shopping experience.',
+        images: [
+            {
+                url: HOME_OG_IMAGE_URL,
+                width: 1200,
+                height: 630,
+            },
+        ],
+        type: 'website',
     },
 }
 
@@ -25,6 +33,15 @@ export default function RootLayout({
     return (
         <html className="scroll-smooth" lang="en">
             <head>
+                <meta property="og:title" content="Storway Digital Retail" />
+                <meta
+                    property="og:description"
+                    content="Offer your clients the VIP shopping experience."
+                />
+                <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:type" content="website" />
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
