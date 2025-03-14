@@ -6,7 +6,7 @@ export const About = forwardRef<HTMLDivElement>(
             <section
                 id="about"
                 ref={ref}
-                className="flex items-center justify-center border-2 bg-gray-300 px-6 py-32 md:px-12 lg:px-24"
+                className="flex items-center justify-center bg-gray-50 px-6 py-32 md:px-12 lg:px-24"
             >
                 <div className="mx-auto max-w-6xl px-6 py-16 text-center">
                     <h2 className="mb-6 text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">

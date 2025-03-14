@@ -43,7 +43,7 @@ export function HeroPost() {
             </div>
 
             {/* Section Showcase */}
-            <div className="mx-auto mt-10 bg-gray-200 px-6 py-32 md:px-24">
+            <div className="mx-auto mt-10 bg-gray-50 px-6 py-32 md:px-24">
                 <div
                     id="learn-more-section"
                     className="mb-6 flex items-center justify-center sm:mb-16"
