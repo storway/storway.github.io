@@ -8,7 +8,7 @@ export function HeroPost() {
                 <div className="flex flex-col items-start justify-start space-y-4">
                     <div className="space-y-2">
                         <h1 className="text-5xl font-semibold">
-                            Offer your clients the VIP shopping experience
+                            In store VIP shopping experience
                         </h1>
                         <p className="text-muted-foreground max-w-[600px] md:text-xl">
                             Cut the queue. Personalised information and advice.
