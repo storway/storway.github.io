@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 interface ShowcaseCardProps {
     headline: string
-    text: string
+    textEl: JSX.Element
     media: JSX.Element
     reverse?: boolean
 }
 
 export const ShowcaseCard = ({
     headline,
-    text,
+    textEl,
     media,
     reverse,
 }: ShowcaseCardProps) => {
@@ -22,12 +22,12 @@ export const ShowcaseCard = ({
                 <h3 className="mb-4 text-3xl leading-tight lg:text-4xl">
                     {headline}
                 </h3>
-                <p className="mb-4 text-lg leading-relaxed">{text}</p>
+                {textEl}
             </div>
             <div
                 className={`flex items-center justify-center ${reverse ? 'md:order-1' : 'md:order-2'}`}
             >
-                <div className="relative overflow-hidden">{media}</div>
+                <div className="relative my-4 overflow-hidden">{media}</div>
             </div>
         </div>
     )
