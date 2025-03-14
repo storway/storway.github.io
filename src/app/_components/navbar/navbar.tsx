@@ -52,7 +52,7 @@ export const Navbar = () => {
                     <h1 className="text-4xl font-semibold">Storway</h1>
                 </Link>
 
-                <div className="hidden space-x-6 text-2xl md:flex">
+                <div className="hidden space-x-6 text-xl md:flex">
                     <Link
                         href="/"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
