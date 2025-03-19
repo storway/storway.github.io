@@ -69,7 +69,12 @@ export const Navbar = () => {
                 </div>
                 <ContactButton hidden />
 
-                <button className="md:hidden" onClick={handleClick}>
+                {/* Mobile Menu Button */}
+                <button
+                    className="md:hidden"
+                    onClick={handleClick}
+                    aria-label="Toggle menu"
+                >
                     {isOpen ? <CloseIcon /> : <MenuIcon />}
                 </button>
             </div>

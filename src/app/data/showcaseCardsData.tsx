@@ -1,3 +1,4 @@
+import { ShowcaseText } from '../_components/digiCartShowcase/ShowcaseText'
 import { ShieldIcon } from '../_components/icons/ShieldIcon'
 import Image from 'next/image'
 
@@ -6,11 +7,10 @@ export const cards = [
         headline: '... for effortless shopping',
         textEl: (
             <>
-                <p className="text-lg leading-relaxed">Clip on,</p>
-                <p className="text-lg leading-relaxed">scan items,</p>
-                <p className="text-lg leading-relaxed">
-                    keep them in your cart,
-                </p>
+                <ShowcaseText text="Clip on," />
+                <ShowcaseText text="scan items," />
+                <ShowcaseText text="keep them in your cart," />
+                <ShowcaseText text="and pay." />
             </>
         ),
         media: (
@@ -28,12 +28,8 @@ export const cards = [
         headline: 'Introducing the DigiCart',
         textEl: (
             <>
-                <p className="text-lg leading-relaxed">
-                    Light, durable, flexible, and easy to clip-on.
-                </p>
-                <p className="text-lg leading-relaxed">
-                    Smart, powerful, and flexible.
-                </p>
+                <ShowcaseText text="Light, durable, flexible, and easy to clip-on." />
+                <ShowcaseText text="Smart, powerful, and flexible." />
             </>
         ),
         media: (
@@ -50,15 +46,10 @@ export const cards = [
         headline: 'Retail Media Display: Smart Ads, Instant Impact',
         textEl: (
             <>
-                <p className="text-lg leading-relaxed">
-                    Engage shoppers with targeted ads while they shop.
-                </p>
-                <p className="text-lg leading-relaxed">
-                    Deliver real-time deals and product info.
-                </p>
-                <p className="text-lg leading-relaxed">
-                    Turn every cart into a dynamic retail media platform.
-                </p>
+                <ShowcaseText text="Engage shoppers with targeted ads while they shop." />
+                <ShowcaseText text="Deliver real-time deals and product info." />
+
+                <ShowcaseText text="Turn every cart into a dynamic retail media platform." />
             </>
         ),
         media: (
@@ -76,13 +67,9 @@ export const cards = [
         headline: 'Protecting Your Business, Customers & Data with Confidence.',
         textEl: (
             <>
-                <p className="text-lg leading-relaxed">Fraud protection.</p>
-                <p className="text-lg leading-relaxed">
-                    Cyber secure by design.
-                </p>
-                <p className="text-lg leading-relaxed">
-                    Upholding the highest standards of data privacy.
-                </p>
+                <ShowcaseText text="Fraud protection." />
+                <ShowcaseText text="Cyber secure by design." />
+                <ShowcaseText text="Upholding the highest standards of data privacy." />
             </>
         ),
         media: <ShieldIcon />,
