@@ -28,7 +28,7 @@ export const cards = [
         headline: 'Introducing the DigiCart',
         textEl: (
             <>
-                <ShowcaseText text="Light, durable, flexible, and easy to clip-on." />
+                <ShowcaseText text="Light, durable, and easy to clip on." />
                 <ShowcaseText text="Smart, powerful, and flexible." />
             </>
         ),
