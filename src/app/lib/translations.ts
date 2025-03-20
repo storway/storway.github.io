@@ -52,6 +52,7 @@ export const translations = {
             text2: `We are assisting French and European retail chains in the delivery of new digital retail opportunities.`,
         },
         benefits: {
+            heading: 'DigiCart delivers 4 key benefits',
             improveClientExperience: 'Improve Client Experience',
             reduceFraud: 'Reduce Fraud',
             increaseBasketSize: 'Increase Basket Size',
@@ -115,6 +116,7 @@ export const translations = {
             text2: `Nous accompagnons les chaînes de distribution françaises et européennes dans la mise en place de nouvelles opportunités numériques dans le commerce de détail.`,
         },
         benefits: {
+            heading: 'DigiCart offre 4 avantages clés',
             improveClientExperience: `Améliorer l’expérience client`,
             reduceFraud: `Réduire la fraude`,
             increaseBasketSize: `Augmenter la taille du panier`,
@@ -179,6 +181,7 @@ export const translations = {
             text2: `Wir unterstützen französische und europäische Einzelhandelsketten bei der Umsetzung neuer digitaler Handelsmöglichkeiten.`,
         },
         benefits: {
+            heading: 'DigiCart bietet 4 wichtige Vorteile',
             improveClientExperience: 'Kundenerlebnis verbessern',
             reduceFraud: 'Betrug reduzieren',
             increaseBasketSize: 'Warenkorbgröße erhöhen',

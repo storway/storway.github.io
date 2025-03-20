@@ -41,7 +41,7 @@ export default function Promises() {
     return (
         <div className="my-32 flex flex-col items-center justify-center">
             <h2 className="text-center text-2xl font-semibold sm:text-4xl md:text-5xl">
-                DigiCart delivers 4 key benefits
+                {benefits?.heading}
             </h2>
             <div className="my-8 flex flex-col items-center justify-center gap-4 p-4 sm:flex-wrap md:flex-row">
                 {promises.map((promise, index) => (
