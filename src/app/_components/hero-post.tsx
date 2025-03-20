@@ -1,19 +1,38 @@
+'use client'
+
 import Image from 'next/image'
 import { ContactButton } from './buttons/ContactButton'
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../lib/translations'
+import { SupportedLanguages } from '../types/languageTypes'
 
 export function HeroPost() {
+    const { language } = useLanguage()
+
     return (
         <section className="">
             <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:grid-cols-2 md:px-24 lg:gap-6 lg:py-28">
                 <div className="flex flex-col items-start justify-start space-y-4">
                     <div className="space-y-2">
                         <h1 className="text-5xl font-semibold">
-                            In store VIP shopping experience
+                            {
+                                translations[language as SupportedLanguages]
+                                    .heroPostHeading
+                            }
                         </h1>
+                        {/* <h1 className="text-5xl font-semibold">
+                            In store VIP shopping experience
+                        </h1> */}
                         <p className="text-muted-foreground max-w-[600px] md:text-xl">
+                            {
+                                translations[language as SupportedLanguages]
+                                    .heroPostText
+                            }
+                        </p>
+                        {/* <p className="text-muted-foreground max-w-[600px] md:text-xl">
                             Cut the queue. Personalised information and advice.
                             Exclusive offers.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="mt-12 flex gap-4 min-[400px]:flex-row">
                         <ContactButton />

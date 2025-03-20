@@ -5,6 +5,7 @@ import cn from 'classnames'
 import './globals.css'
 import { Navbar } from './_components/navbar/navbar'
 import Footer from './_components/footer'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 const inter = Baloo_2({ subsets: ['latin'] })
 
@@ -80,9 +81,11 @@ export default function RootLayout({
                     'dark:bg-slate-900 dark:text-slate-400'
                 )}
             >
-                <Navbar />
-                <div className="min-h-screen">{children}</div>
-                <Footer />
+                <LanguageProvider>
+                    <Navbar />
+                    <div className="min-h-screen">{children}</div>
+                    <Footer />
+                </LanguageProvider>
             </body>
         </html>
     )
