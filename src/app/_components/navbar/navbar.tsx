@@ -11,6 +11,7 @@ import { useLanguage } from '@/app/contexts/LanguageContext'
 import { SupportedLanguages } from '@/app/types/languageTypes'
 import { LanguageChange } from './LanguageChange'
 import { MobileMenu } from './MobileMenu'
+import { translations } from '@/app/lib/translations'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -18,6 +19,8 @@ export const Navbar = () => {
     const router = useRouter()
     const pathname = usePathname()
     const { language, setLanguage } = useLanguage()
+
+    const { navigation } = translations[language as SupportedLanguages]
 
     const handleClick = () => {
         setIsOpen(!isOpen)
@@ -61,14 +64,14 @@ export const Navbar = () => {
                         href="/"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
                     >
-                        Home
+                        {navigation?.home}
                     </Link>
                     <Link
                         href="#about"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
                         onClick={handleClickAbout}
                     >
-                        About us
+                        {navigation?.aboutUs}
                     </Link>
                 </div>
                 <div className="flex gap-4">

@@ -3,10 +3,16 @@
 import Link from 'next/link'
 import { StorwayLogo } from './icons/StorwayLogo'
 import { useRouter, usePathname } from 'next/navigation'
+import { translations } from '../lib/translations'
+import { SupportedLanguages } from '../types/languageTypes'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Footer = () => {
     const router = useRouter()
     const pathname = usePathname()
+    const { language } = useLanguage()
+    const { navigation, button, footer } =
+        translations[language as SupportedLanguages]
 
     const handleClickAbout = (
         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -33,20 +39,22 @@ const Footer = () => {
                         <h2 className="text-xl font-bold">Storway</h2>
                     </div>
                     <p className="mt-2 text-gray-600">
-                        Offer your clients the VIP shopping experience
+                        {footer?.businessDescription}
                     </p>
                 </div>
 
                 {/* Column 2: Quick Links */}
                 <div>
-                    <h3 className="text-lg font-semibold">Quick Links</h3>
+                    <h3 className="text-lg font-semibold">
+                        {footer?.quickLinks}
+                    </h3>
                     <ul className="mt-2">
                         <li>
                             <Link
                                 href="/"
                                 className="text-gray-600 hover:text-gray-900"
                             >
-                                Home
+                                {navigation?.home}
                             </Link>
                         </li>
                         <li>
@@ -54,7 +62,7 @@ const Footer = () => {
                                 href="/contact"
                                 className="text-gray-600 hover:text-gray-900"
                             >
-                                Contact us
+                                {button?.contactUs}
                             </Link>
                         </li>
                         <li>
@@ -63,7 +71,7 @@ const Footer = () => {
                                 className="text-gray-600 hover:text-gray-900"
                                 onClick={handleClickAbout}
                             >
-                                About us
+                                {navigation?.aboutUs}
                             </Link>
                         </li>
                     </ul>
@@ -89,12 +97,12 @@ const Footer = () => {
             {/* Bottom Row */}
             <div className="mt-6 pt-4 text-center text-sm text-gray-600">
                 <p>
-                    &copy; {new Date().getFullYear()} Storway. All rights
-                    reserved.
+                    &copy; {new Date().getFullYear()} Storway.{' '}
+                    {footer?.copyright}
                 </p>
                 <p>
                     <a href="#" className="hover:underline">
-                        Privacy Policy
+                        {footer?.privacyPolicy}
                     </a>
                 </p>
             </div>

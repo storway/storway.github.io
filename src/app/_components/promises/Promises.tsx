@@ -1,30 +1,43 @@
+'use client'
+
 import { BarChart2 } from 'lucide-react'
 import { BurglarIcon } from '../icons/BurglarIcon'
 import { RibbonIcon } from '../icons/RibbonIcon'
 import { KartIcon } from '../icons/KartIcon'
-
-const promises = [
-    {
-        icon: <RibbonIcon />,
-        text: 'Improve Client Experience',
-    },
-    {
-        icon: <BurglarIcon />,
-        text: 'Reduce Fraud',
-    },
-    {
-        icon: <KartIcon />,
-        text: 'Increase Basket Size',
-    },
-    {
-        icon: (
-            <BarChart2 className="text-purple-500" height={100} width={100} />
-        ),
-        text: 'Retail Media Revenue',
-    },
-]
+import { useLanguage } from '@/app/contexts/LanguageContext'
+import { SupportedLanguages } from '@/app/types/languageTypes'
+import { translations } from '@/app/lib/translations'
 
 export default function Promises() {
+    const { language } = useLanguage()
+
+    const { benefits } = translations[language as SupportedLanguages]
+
+    const promises = [
+        {
+            icon: <RibbonIcon />,
+            text: benefits?.improveClientExperience,
+        },
+        {
+            icon: <BurglarIcon />,
+            text: benefits?.reduceFraud,
+        },
+        {
+            icon: <KartIcon />,
+            text: benefits?.increaseBasketSize,
+        },
+        {
+            icon: (
+                <BarChart2
+                    className="text-purple-500"
+                    height={100}
+                    width={100}
+                />
+            ),
+            text: benefits?.retailMediaRevenue,
+        },
+    ]
+
     return (
         <div className="my-32 flex flex-col items-center justify-center">
             <h2 className="text-center text-2xl font-semibold sm:text-4xl md:text-5xl">

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Globe } from 'lucide-react'
 import { SupportedLanguages } from '@/app/types/languageTypes'
 import { supportedLanguages, useLanguage } from '@/app/contexts/LanguageContext'
+import { translations } from '@/app/lib/translations'
 
 interface MobileMenuProps {
     showLanguageChange: boolean
@@ -23,15 +24,20 @@ export const MobileMenu = ({
     handleClickAbout,
 }: MobileMenuProps) => {
     const { language } = useLanguage()
+    const { button, navigation } = translations[language as SupportedLanguages]
 
     const links = [
         { href: '/', text: 'Home', handler: () => setIsOpen(false) },
         {
             href: '/contact',
-            text: 'Contact us',
+            text: button?.contactUs,
             handler: () => setIsOpen(false),
         },
-        { href: '#about', text: 'About us', handler: handleClickAbout },
+        {
+            href: '#about',
+            text: navigation?.aboutUs,
+            handler: handleClickAbout,
+        },
     ]
 
     const languageLabels: Record<SupportedLanguages, string> = {
@@ -73,7 +79,7 @@ export const MobileMenu = ({
                         </Link>
                     ))}
                     <button
-                        className="flex min-w-max items-center gap-2 px-2 py-2 hover:bg-gray-100"
+                        className="flex min-w-max items-center gap-2 border-t-2 border-gray-300 px-2 py-2 pt-4 hover:bg-gray-100"
                         onClick={() => setShowLanguageChange(true)}
                     >
                         <Globe />
