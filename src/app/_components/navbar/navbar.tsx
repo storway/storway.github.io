@@ -7,22 +7,29 @@ import { CloseIcon } from '../icons/CloseIcon'
 import { MenuIcon } from '../icons/MenuIcon'
 import { ContactButton } from '../buttons/ContactButton'
 import { useRouter, usePathname } from 'next/navigation'
+import { useLanguage } from '@/app/contexts/LanguageContext'
+import { SupportedLanguages } from '@/app/types/languageTypes'
+import { LanguageChange } from './LanguageChange'
+import { MobileMenu } from './MobileMenu'
+import { translations } from '@/app/lib/translations'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [showLanguageChange, setShowLanguageChange] = useState(false)
     const router = useRouter()
     const pathname = usePathname()
+    const { language, setLanguage } = useLanguage()
+
+    const { navigation } = translations[language as SupportedLanguages]
 
     const handleClick = () => {
         setIsOpen(!isOpen)
+        setShowLanguageChange(false)
     }
 
-    const handleClickHome = (e: { preventDefault: () => void }) => {
-        setIsOpen(false)
-    }
-
-    const handleClickContact = () => {
-        setIsOpen(false)
+    const handleLanguageChange = (lang: SupportedLanguages) => {
+        setLanguage(lang)
+        setShowLanguageChange(false)
     }
 
     const handleClickAbout = (
@@ -57,18 +64,20 @@ export const Navbar = () => {
                         href="/"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
                     >
-                        Home
+                        {navigation?.home}
                     </Link>
                     <Link
                         href="#about"
                         className="cursor-pointer hover:text-gray-400 hover:underline"
                         onClick={handleClickAbout}
                     >
-                        About us
+                        {navigation?.aboutUs}
                     </Link>
                 </div>
-                <ContactButton hidden />
-
+                <div className="flex gap-4">
+                    <ContactButton hidden />
+                    <LanguageChange />
+                </div>
                 {/* Mobile Menu Button */}
                 <button
                     className="md:hidden"
@@ -80,30 +89,13 @@ export const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute right-0 top-20 z-20 flex w-full flex-col items-center justify-center space-y-4 border-t border-gray-500 bg-gray-100 px-2 py-4 shadow-lg md:hidden">
-                    <Link
-                        href="/"
-                        className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
-                        onClick={handleClickHome}
-                    >
-                        Home
-                    </Link>
-
-                    <Link
-                        href="/contact"
-                        className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
-                        onClick={handleClickContact}
-                    >
-                        Contact us
-                    </Link>
-                    <Link
-                        href="#about"
-                        className="rounded-sm px-2 py-2 hover:bg-gray-500 hover:text-white"
-                        onClick={handleClickAbout}
-                    >
-                        About us
-                    </Link>
-                </div>
+                <MobileMenu
+                    showLanguageChange={showLanguageChange}
+                    setShowLanguageChange={setShowLanguageChange}
+                    handleLanguageChange={handleLanguageChange}
+                    setIsOpen={setIsOpen}
+                    handleClickAbout={handleClickAbout}
+                />
             )}
         </nav>
     )

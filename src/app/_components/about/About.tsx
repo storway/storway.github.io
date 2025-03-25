@@ -1,7 +1,16 @@
+'use client'
+
+import { useLanguage } from '@/app/contexts/LanguageContext'
+import { translations } from '@/app/lib/translations'
+import { SupportedLanguages } from '@/app/types/languageTypes'
 import { forwardRef, ForwardedRef } from 'react'
 
 export const About = forwardRef<HTMLDivElement>(
     (props, ref: ForwardedRef<HTMLDivElement>) => {
+        const { language } = useLanguage()
+
+        const { aboutUs } = translations[language as SupportedLanguages]
+
         return (
             <section
                 id="about"
@@ -10,16 +19,13 @@ export const About = forwardRef<HTMLDivElement>(
             >
                 <div className="mx-auto max-w-6xl px-6 py-16 text-center">
                     <h2 className="mb-6 text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
-                        About Us
+                        {aboutUs?.heading}
                     </h2>
                     <p className="mx-auto max-w-3xl text-lg">
-                        Storway SAS, headquartered in France, was founded by
-                        seasoned experts in retail, hardware, and big data, and
-                        strengthened by a dynamic team of young tech innovators.
+                        {aboutUs?.text1}
                     </p>
                     <p className="mx-auto mt-4 max-w-3xl text-lg">
-                        We are assisting French and European retail chains in
-                        the delivery of new digital retail opportunities.
+                        {aboutUs?.text2}
                     </p>
                 </div>
             </section>
