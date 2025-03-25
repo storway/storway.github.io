@@ -43,13 +43,13 @@ export const LanguageChange = () => {
                                 text="Français"
                                 language="fr"
                             />
-                            <LanguageChangeButton
+                            {/* <LanguageChangeButton
                                 handleLanguageChange={() =>
                                     handleLanguageChange('de')
                                 }
                                 text="Deutsch"
                                 language="de"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </>

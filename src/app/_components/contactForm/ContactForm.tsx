@@ -3,10 +3,16 @@
 import { forwardRef } from 'react'
 import type { ForwardedRef } from 'react'
 import { useForm } from '@formspree/react'
+import { useLanguage } from '@/app/contexts/LanguageContext'
+import { translations } from '@/app/lib/translations'
+import { SupportedLanguages } from '@/app/types/languageTypes'
 
 export const ContactForm = forwardRef<HTMLDivElement>(
     (props, ref: ForwardedRef<HTMLDivElement>) => {
         const [state, handleSubmit] = useForm('xwplkwoe')
+        const { language } = useLanguage()
+
+        const { contact } = translations[language as SupportedLanguages]
 
         if (state.succeeded) {
             return (
@@ -16,11 +22,10 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                 >
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <h3 className="text-2xl font-bold">
-                            Thank you for your interest!
+                            {contact?.confirmation?.title}
                         </h3>
                         <p className="text-gray-600">
-                            We've received your inquiry and will get back to you
-                            shortly.
+                            {contact?.confirmation?.message}
                         </p>
                     </div>
                 </div>
@@ -35,12 +40,10 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                 <div className="container px-4 md:px-6">
                     <div className="mb-8 text-center">
                         <h2 className="text-2xl font-semibold sm:text-4xl md:text-5xl">
-                            Contact us !
+                            {contact?.heading}
                         </h2>
                         <p className="mx-auto max-w-lg text-gray-600">
-                            To know more about the product, partnership
-                            opportunities and whether DigiCart deployment is
-                            available in your network.
+                            {contact?.description}
                         </p>
                     </div>
                     <div className="mx-auto max-w-3xl rounded-lg bg-white p-6 shadow">
@@ -56,7 +59,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         htmlFor="name"
                                         className="block font-medium"
                                     >
-                                        Full Name
+                                        {contact?.form?.fullName}
                                     </label>
                                     <input
                                         id="name"
@@ -71,7 +74,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         htmlFor="email"
                                         className="block font-medium"
                                     >
-                                        Email
+                                        {contact?.form?.email}
                                     </label>
                                     <input
                                         id="email"
@@ -88,7 +91,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         htmlFor="name"
                                         className="block font-medium"
                                     >
-                                        Company
+                                        {contact?.form?.company}
                                     </label>
                                     <input
                                         id="company"
@@ -103,7 +106,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         htmlFor="email"
                                         className="block font-medium"
                                     >
-                                        Country
+                                        {contact?.form?.country}
                                     </label>
                                     <input
                                         id="country"
@@ -118,7 +121,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                         htmlFor="name"
                                         className="block font-medium"
                                     >
-                                        Phone number
+                                        {contact?.form?.phoneNumber}
                                     </label>
                                     <input
                                         id="phone"
@@ -134,7 +137,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                     htmlFor="message"
                                     className="block font-medium"
                                 >
-                                    Message
+                                    {contact?.form?.message}
                                 </label>
                                 <textarea
                                     id="message"
@@ -154,8 +157,7 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                     htmlFor="privacy"
                                     className="ml-2 text-sm text-gray-600"
                                 >
-                                    I agree to the processing of my data
-                                    according to the privacy policy.
+                                    {contact?.form?.privacyAgreement}
                                 </label>
                             </div>
                             <button
@@ -164,8 +166,8 @@ export const ContactForm = forwardRef<HTMLDivElement>(
                                 className="w-full rounded bg-primary px-4 py-2 text-white hover:bg-secondary sm:w-auto"
                             >
                                 {state.submitting
-                                    ? 'Submitting...'
-                                    : 'Submit Inquiry'}
+                                    ? contact?.form?.submitting
+                                    : contact?.form?.submit}
                             </button>
                         </form>
                     </div>

@@ -62,6 +62,28 @@ export const translations = {
             contactUs: 'Contact us',
             learnMore: 'Learn more',
         },
+        contact: {
+            heading: 'Contact us!',
+            description:
+                'To know more about the product, partnership opportunities, and whether DigiCart deployment is available in your network.',
+            form: {
+                fullName: 'Full Name',
+                email: 'Email',
+                company: 'Company',
+                country: 'Country',
+                phoneNumber: 'Phone number',
+                message: 'Message',
+                privacyAgreement:
+                    'I agree to the processing of my data according to the privacy policy.',
+                submitting: 'Submitting...',
+                submit: 'Submit Inquiry',
+            },
+            confirmation: {
+                title: 'Thank you for your interest!',
+                message:
+                    "We've received your inquiry and will get back to you shortly.",
+            },
+        },
     },
 
     fr: {
@@ -77,54 +99,78 @@ export const translations = {
         },
         hero: {
             heading: 'Expérience VIP',
-            text: "Évitez l'attente. Profitez de conseils et d'offres exclusives.",
+            text: 'Plus d’attente à la caisse. Conseils et offres personnalisés.',
         },
         showcase: {
-            heading: 'Un chariot plus intelligent...',
+            heading: 'Un chariot intelligent...',
 
-            effortlessShopping: '... pour un shopping sans effort',
+            effortlessShopping:
+                '... pour faire les courses dans des conditions optimales ',
             steps: [
-                'Fixez-le,',
+                'Clipsez le DigiCart,',
                 'scannez les articles,',
                 'gardez-les dans votre panier,',
                 'et payez.',
             ],
 
-            introducingDigiCart: 'Présentation du DigiCart',
+            introducingDigiCart: 'Le DigiCart',
             digiCartDescription: 'Léger, durable et facile à clipser.',
             digiCartSmart: 'Intelligent, puissant et flexible.',
 
             retailMediaHeading:
-                'Affichage Retail Media : Publicités intelligentes, impact instantané',
+                'Affichage Retail Media : Publicités individualisées, impact instantané',
             retailMediaDescription: [
-                'Engagez les clients avec des annonces ciblées pendant leurs achats.',
-                'Proposez des offres en temps réel et des informations sur les produits.',
-                'Transformez chaque chariot en une plateforme média dynamique.',
+                'Des annonces ciblées, au lieu et au moment idéal',
+                'Informations produits et offres en temps réel.',
+                'Transformez le caddie en plateforme de retail média.',
             ],
 
             securityHeading:
                 'Protéger votre entreprise, vos clients et leurs données en toute confiance.',
             securityFeatures: [
-                'Protection contre la fraude.',
-                'Sécurité cybernétique intégrée.',
-                'Respect des normes les plus élevées en matière de confidentialité des données.',
+                'Système antifraude.',
+                'Cybersécurité au cœur de la plateforme et du hardware.',
+                'La confidentialité des données est dans notre ADN',
             ],
         },
         aboutUs: {
-            heading: 'À propos de nous',
-            text1: `Storway SAS, dont le siège est en France, a été fondée par des experts chevronnés du commerce de détail, du matériel et du big data, et renforcée par une équipe dynamique de jeunes innovateurs technologiques.`,
-            text2: `Nous accompagnons les chaînes de distribution françaises et européennes dans la mise en place de nouvelles opportunités numériques dans le commerce de détail.`,
+            heading: 'À propos de Storway ',
+            text1: `Storway SAS a été créée en France par des experts de la distribution, du hardware et du big data, et renforcée par une équipe de jeunes innovateurs de la tech. `,
+            text2: `Nous accompagnons les groupes de grande distribution français et européens dans leur transition numérique.`,
+            text3: `Contactez-nous si vous êtes tentés de rejoindre notre équipe, qui compte déjà quatre nationalités.`,
         },
         benefits: {
-            heading: 'DigiCart offre 4 avantages clés',
-            improveClientExperience: `Améliorer l’expérience client`,
-            reduceFraud: `Réduire la fraude`,
-            increaseBasketSize: `Augmenter la taille du panier`,
-            retailMediaRevenue: `Revenus des médias de détail`,
+            heading: 'Retour sur Investissement immédiat',
+            improveClientExperience: `Amélioration de l’Expérience Client`,
+            reduceFraud: `Réduction de la fraude`,
+            increaseBasketSize: `Augmentation du panier`,
+            retailMediaRevenue: `Nouvelles opportunités de revenus en retail média`,
         },
         button: {
             contactUs: 'Contact',
             learnMore: 'En savoir plus',
+        },
+        contact: {
+            heading: 'Contactez-nous!',
+            description:
+                'Pour en savoir plus sur le produit, les opportunités de partenariat et la disponibilité du déploiement de DigiCart dans votre réseau.',
+            form: {
+                fullName: 'Nom et Prénom ',
+                email: 'Email',
+                company: 'Entreprise',
+                country: 'Pays',
+                phoneNumber: 'Numéro de téléphone',
+                message: 'Message',
+                privacyAgreement:
+                    'J’accepte le traitement de mes données conformément à la politique de confidentialité.',
+                submitting: 'Envoi en cours...',
+                submit: 'Envoyer la demande',
+            },
+            confirmation: {
+                title: 'Merci, et à bientôt !',
+                message:
+                    'Nous avons bien reçu votre demande et nous vous répondrons sous peu.',
+            },
         },
     },
 
@@ -190,6 +236,28 @@ export const translations = {
         button: {
             contactUs: 'Kontakt',
             learnMore: 'Mehr erfahren',
+        },
+        contact: {
+            heading: 'Kontaktieren Sie uns!',
+            description:
+                'Erfahren Sie mehr über das Produkt, Partnerschaftsmöglichkeiten und ob der DigiCart-Einsatz in Ihrem Netzwerk verfügbar ist.',
+            form: {
+                fullName: 'Vollständiger Name',
+                email: 'E-Mail',
+                company: 'Unternehmen',
+                country: 'Land',
+                phoneNumber: 'Telefonnummer',
+                message: 'Nachricht',
+                privacyAgreement:
+                    'Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzrichtlinie zu.',
+                submitting: 'Senden...',
+                submit: 'Anfrage absenden',
+            },
+            confirmation: {
+                title: 'Vielen Dank für Ihr Interesse!',
+                message:
+                    'Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.',
+            },
         },
     },
 }
