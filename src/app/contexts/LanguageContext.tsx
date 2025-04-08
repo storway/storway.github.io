@@ -12,8 +12,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 )
 
 // Supported languages
-export const supportedLanguages = ['en', 'fr']
-// export const supportedLanguages = ['en', 'fr', 'de']
+export const supportedLanguages = ['en', 'fr', 'de']
 
 export const LanguageProvider = ({
     children,

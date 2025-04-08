@@ -184,37 +184,37 @@ export const translations = {
             copyright: ' Alle Rechte vorbehalten.',
             privacyPolicy: 'Datenschutzerklärung',
             businessDescription:
-                'Bieten Sie Ihren Kunden ein VIP-Shopping-Erlebnis.',
+                'Bieten Sie Ihren Kunden ein exklusives VIP-Shopping-Erlebnis.',
         },
         hero: {
-            heading: 'VIP-Einkauf',
-            text: 'Keine Warteschlange. Persönliche Beratung. Exklusive Vorteile.',
+            heading: 'VIP-Shopping-Erlebnis direkt im Store.',
+            text: 'Kein Anstehen. Persönliche Beratung. Exklusive Angebote.',
         },
         showcase: {
             heading: 'Ein smarter Einkaufswagen...',
 
             effortlessShopping: '... für müheloses Einkaufen',
             steps: [
-                'Einclippen,',
-                'Artikel scannen,',
+                'Anclippen,',
+                'scannen,',
                 'im Wagen lassen,',
                 'und bezahlen.',
             ],
 
             introducingDigiCart: 'Entdecken Sie das DigiCart',
-            digiCartDescription: 'Leicht, langlebig und einfach zu befestigen.',
-            digiCartSmart: 'Intelligent, leistungsstark und flexibel.',
+            digiCartDescription: 'Leicht, robust und einfach anzubringen.',
+            digiCartSmart: 'Clever, leistungsstark und flexibel.',
 
             retailMediaHeading:
                 'Retail Media Display: Intelligente Werbung, sofortige Wirkung',
             retailMediaDescription: [
-                'Binden Sie Kunden mit gezielten Anzeigen während des Einkaufs ein.',
+                'Begeistern Sie Käufer mit gezielten Anzeigen während des Einkaufs.',
                 'Liefern Sie Echtzeit-Angebote und Produktinformationen.',
-                'Machen Sie jeden Einkaufswagen zu einer dynamischen Retail-Media-Plattform.',
+                'Verwandeln Sie jeden Einkaufswagen in eine dynamische Retail-Media-Plattform.',
             ],
 
             securityHeading:
-                'Schützen Sie Ihr Unternehmen, Ihre Kunden & Daten mit Vertrauen.',
+                'Schutz für Ihr Unternehmen, Ihre Kunden und Daten – mit Vertrauen.',
             securityFeatures: [
                 'Betrugsschutz.',
                 'Von Grund auf cybersicher.',
@@ -223,15 +223,15 @@ export const translations = {
         },
         aboutUs: {
             heading: 'Über uns',
-            text1: `Storway SAS mit Sitz in Frankreich wurde von erfahrenen Experten aus den Bereichen Einzelhandel, Hardware und Big Data gegründet und durch ein dynamisches Team junger Technologie-Innovatoren verstärkt.`,
-            text2: `Wir unterstützen französische und europäische Einzelhandelsketten bei der Umsetzung neuer digitaler Handelsmöglichkeiten.`,
+            text1: `Storway SAS, mit Hauptsitz in Frankreich, wurde von erfahrenen Fachleuten aus den Bereichen Einzelhandel, Hardware und Big Data ins Leben gerufen und wird durch ein innovatives Team junger Tech-Experten verstärkt.`,
+            text2: `Wir begleiten französische und europäische Retail-Ketten bei der Einführung neuer digitaler Geschäftsmöglichkeiten.`,
         },
         benefits: {
-            heading: 'DigiCart bietet 4 wichtige Vorteile',
-            improveClientExperience: 'Kundenerlebnis verbessern',
+            heading: 'DigiCart liefert 4 entscheidende Vorteile',
+            improveClientExperience: 'Steigern der Kundenzufriedenheit',
             reduceFraud: 'Betrug reduzieren',
-            increaseBasketSize: 'Warenkorbgröße erhöhen',
-            retailMediaRevenue: 'Einnahmen aus Retail Media',
+            increaseBasketSize: 'Warenkorbwert erhöhen',
+            retailMediaRevenue: 'Erträge aus Retail Media',
         },
         button: {
             contactUs: 'Kontakt',
