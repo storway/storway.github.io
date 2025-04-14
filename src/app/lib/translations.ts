@@ -12,8 +12,10 @@ export const translations = {
                 'Offer your clients the VIP shopping experience.',
         },
         hero: {
-            heading: 'In-store VIP shopping experience',
-            text: 'Cut the queue. Personalised information and advice. Exclusive offers.',
+            heading: 'VIP In  Store Experience',
+            text1: 'Exclusive shopping services',
+            text2: 'Personalised offers and information.',
+            text3: 'Fast Track no queuing.',
         },
         showcase: {
             heading: 'A smart trolley...',
@@ -98,8 +100,10 @@ export const translations = {
             businessDescription: 'Offrez à vos clients une expérience VIP.',
         },
         hero: {
-            heading: 'Expérience VIP',
-            text: 'Plus d’attente à la caisse. Conseils et offres personnalisés.',
+            heading: 'Expérience VIP en magasin',
+            text1: 'Services d’achat exclusifs.',
+            text2: 'Offres et infos personnalisées.',
+            text3: 'Achats fast track, sans faire la queue',
         },
         showcase: {
             heading: 'Un chariot intelligent...',
@@ -187,8 +191,10 @@ export const translations = {
                 'Bieten Sie Ihren Kunden ein exklusives VIP-Shopping-Erlebnis.',
         },
         hero: {
-            heading: 'VIP-Shopping-Erlebnis direkt im Store.',
-            text: 'Kein Anstehen. Persönliche Beratung. Exklusive Angebote.',
+            heading: 'VIP Erlebnis im Store',
+            text1: 'Exklusive Shopping-Services',
+            text2: 'Persönliche Angebote & Infos.',
+            text3: 'Fast Track ohne anstehen.',
         },
         showcase: {
             heading: 'Ein smarter Einkaufswagen...',

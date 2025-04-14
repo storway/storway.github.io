@@ -5,6 +5,8 @@ import { ContactButton } from './buttons/ContactButton'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../lib/translations'
 import { SupportedLanguages } from '../types/languageTypes'
+import { HeroHeading } from './hero/HeroHeading'
+import { HeroText } from './hero/HeroText'
 
 export function HeroPost() {
     const { language } = useLanguage()
@@ -15,13 +17,11 @@ export function HeroPost() {
         <section className="">
             <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:grid-cols-2 md:px-24 lg:gap-6 lg:py-28">
                 <div className="flex flex-col items-start justify-start space-y-4">
-                    <div className="space-y-2">
-                        <h1 className="text-5xl font-semibold">
-                            {hero?.heading}
-                        </h1>
-                        <p className="text-muted-foreground max-w-[600px] md:text-xl">
-                            {hero?.text}
-                        </p>
+                    <div className="mb-4 space-y-2">
+                        <HeroHeading heading={hero?.heading} />
+                        <HeroText text={hero?.text1} />
+                        <HeroText text={hero?.text2} />
+                        <HeroText text={hero?.text3} />
                     </div>
                     <div className="mt-12 flex gap-4 min-[400px]:flex-row">
                         <ContactButton />
