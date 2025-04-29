@@ -8,11 +8,10 @@ export const translations = {
             quickLinks: 'Quick Links',
             copyright: ' All rights reserved.',
             privacyPolicy: 'Privacy Policy',
-            businessDescription:
-                'Offer your clients the VIP shopping experience.',
+            businessDescription: 'VIP In Store Experience',
         },
         hero: {
-            heading: 'VIP In  Store Experience',
+            heading: 'VIP In Store Experience',
             text1: 'Exclusive shopping services',
             text2: 'Personalised offers and information.',
             text3: 'Fast Track no queuing.',
@@ -97,7 +96,7 @@ export const translations = {
             quickLinks: 'Liens rapides',
             copyright: ' Tous droits réservés.',
             privacyPolicy: 'Politique de confidentialité',
-            businessDescription: 'Offrez à vos clients une expérience VIP.',
+            businessDescription: 'Expérience VIP en magasin',
         },
         hero: {
             heading: 'Expérience VIP en magasin',
@@ -185,10 +184,10 @@ export const translations = {
         },
         footer: {
             quickLinks: 'Nützliche Links',
-            copyright: ' Alle Rechte vorbehalten.',
+            copyright: 'Alle Rechte vorbehalten.',
             privacyPolicy: 'Datenschutzerklärung',
             businessDescription:
-                'Bieten Sie Ihren Kunden ein exklusives VIP-Shopping-Erlebnis.',
+                'Bieten Sie Ihren Kunden ein VIP Erlebnis im Store.',
         },
         hero: {
             heading: 'VIP Erlebnis im Store',
