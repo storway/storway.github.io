@@ -82,12 +82,12 @@ export default function RootLayout({
                     'dark:bg-slate-900 dark:text-slate-400'
                 )}
             >
-                <ComingSoonPage />
-                {/* <LanguageProvider>
+                {/* <ComingSoonPage /> */}
+                <LanguageProvider>
                     <Navbar />
                     <div className="min-h-screen">{children}</div>
                     <Footer />
-                </LanguageProvider> */}
+                </LanguageProvider>
             </body>
         </html>
     )
