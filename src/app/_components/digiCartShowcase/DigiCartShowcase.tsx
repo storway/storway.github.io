@@ -96,12 +96,12 @@ export const DigiCartShowcase = () => {
     ]
 
     return (
-        <div className="mx-auto mt-10 bg-gray-200 px-6 py-32 md:px-24">
+        <div className="mx-auto bg-gray-200 px-6 py-32 md:px-24">
             <div
                 id="learn-more-section"
                 className="mb-6 flex items-center justify-center sm:mb-16"
             >
-                <h2 className="text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="text-primary text-2xl tracking-tighter sm:text-4xl md:text-7xl">
                     {showcase?.heading}
                 </h2>
             </div>

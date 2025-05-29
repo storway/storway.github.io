@@ -3,23 +3,25 @@ export const translations = {
         navigation: {
             aboutUs: 'About us',
             home: 'Home',
+            contactUs: 'Contact Us',
         },
         footer: {
             quickLinks: 'Quick Links',
             copyright: ' All rights reserved.',
             privacyPolicy: 'Privacy Policy',
-            businessDescription: 'VIP In Store Experience',
+            businessDescription: 'Storway is a smart retail solution that enhances the in-store shopping experience with computer vision-enabled cart screens. It helps customers shop faster by automatically detecting products as they’re placed in the cart—no scanning required.For retailers, it offers powerful insights, built-in advertising space, and increased security, all while reducing checkout time and boosting customer satisfaction.',
+            info: 'Info',
         },
         hero: {
-            heading: 'VIP In Store Experience',
+            heading: 'Reinventing the Grocery Cart Experience.',
             text1: 'Exclusive shopping services',
             text2: 'Personalised offers and information.',
             text3: 'Fast Track no queuing.',
         },
         showcase: {
-            heading: 'A smart trolley...',
+            heading: 'Smart cart. Smarter journey.',
 
-            effortlessShopping: '... for effortless shopping',
+            effortlessShopping: 'Designed to transform how customers move, shop, and check out.',
             steps: [
                 'Clip on,',
                 'scan items,',
@@ -91,12 +93,14 @@ export const translations = {
         navigation: {
             aboutUs: 'À propos',
             home: 'Accueil',
+            contactUs: 'Nous Contacter',
         },
         footer: {
             quickLinks: 'Liens rapides',
             copyright: ' Tous droits réservés.',
             privacyPolicy: 'Politique de confidentialité',
             businessDescription: 'Expérience VIP en magasin',
+            info: 'Info',
         },
         hero: {
             heading: 'Expérience VIP en magasin',
@@ -181,6 +185,7 @@ export const translations = {
         navigation: {
             aboutUs: 'Über uns',
             home: 'Startseite',
+            contactUs: 'Contact Us',
         },
         footer: {
             quickLinks: 'Nützliche Links',

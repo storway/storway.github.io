@@ -16,13 +16,9 @@ export const ContactButton = ({ hidden }: ContactButtonProps) => {
         <Link
             href="/contact"
             passHref
-            className={`${hidden ? 'hidden md:flex' : ''}`}
+            className={`text-white text-center btn-primary ${hidden ? 'hidden md:flex' : ''}`}
         >
-            <button className="flex cursor-pointer items-center justify-center rounded-lg border-2 border-transparent bg-primary px-6 py-2">
-                <p className="text-nowrap text-xl text-white">
-                    {button?.contactUs}
-                </p>
-            </button>
+            {button?.contactUs}
         </Link>
     )
 }

@@ -14,28 +14,33 @@ export function HeroPost() {
     const { hero, button } = translations[language as SupportedLanguages]
 
     return (
-        <section className="">
-            <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:grid-cols-2 md:px-24 lg:gap-6 lg:py-28">
-                <div className="flex flex-col items-start justify-start space-y-4">
+        <section className="" style={{
+            backgroundImage: "url('/images/bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+        }}>
+            <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:px-24 lg:gap-6 lg:py-28">
+                <div className="flex flex-col space-y-4">
                     <div className="mb-4 space-y-2">
-                        <HeroHeading heading={hero?.heading} />
-                        <HeroText text={hero?.text1} />
-                        <HeroText text={hero?.text2} />
-                        <HeroText text={hero?.text3} />
+                        <HeroHeading className="text-5xl" heading={hero?.heading} />
+                        {/* <HeroText className="text-white" text={hero?.text1} />
+                        <HeroText className="text-white text-center" text={hero?.text2} />
+                        <HeroText className="text-white" text={hero?.text3} /> */}
                     </div>
-                    <div className="mt-12 flex gap-4 min-[400px]:flex-row">
+                    <p className="mt-12 text-center w-100">
                         <ContactButton />
-                        <a
+                        {/* <a
                             href="#learn-more-section"
                             className="flex cursor-pointer items-center justify-center rounded-lg border-2 border-black px-6 py-2"
                         >
                             <p className="text-nowrap text-xl">
                                 {button?.learnMore}
                             </p>
-                        </a>
-                    </div>
+                        </a> */}
+                    </p>
                 </div>
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                     <div className="relative overflow-hidden">
                         <Image
                             priority
@@ -46,7 +51,7 @@ export function HeroPost() {
                             height={630}
                         />
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

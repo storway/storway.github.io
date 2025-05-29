@@ -19,7 +19,7 @@ export const LanguageChange = () => {
     return (
         <div className="relative hidden text-left md:inline-block">
             <button
-                className="flex w-20 items-center gap-1 rounded-lg border-2 border-black px-2 py-2 hover:bg-gray-100"
+                className="flex w-20 items-center gap-1 rounded-lg border-2 border-white px-2 py-2 text-white"
                 onClick={handleOpenLanguage}
             >
                 <Globe className="h-8 w-6" />
@@ -43,13 +43,13 @@ export const LanguageChange = () => {
                                 text="Français"
                                 language="fr"
                             />
-                            <LanguageChangeButton
+                            {/* <LanguageChangeButton
                                 handleLanguageChange={() =>
                                     handleLanguageChange('de')
                                 }
                                 text="Deutsch"
                                 language="de"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </>

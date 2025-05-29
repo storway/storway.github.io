@@ -1,6 +1,6 @@
 import { CMS_NAME, HOME_OG_IMAGE_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
-import { Baloo_2 } from 'next/font/google'
+// import { Roboto } from 'next/font/google'
 import cn from 'classnames'
 import './globals.css'
 import { Navbar } from './_components/navbar/navbar'
@@ -8,7 +8,7 @@ import Footer from './_components/footer'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { ComingSoonPage } from './_components/comingSoon/ComingSoonPage'
 
-const inter = Baloo_2({ subsets: ['latin'] })
+// const inter = Roboto
 
 export const metadata: Metadata = {
     title: `${CMS_NAME}`,
@@ -78,7 +78,7 @@ export default function RootLayout({
             </head>
             <body
                 className={cn(
-                    inter.className,
+                    // inter.className,
                     'dark:bg-slate-900 dark:text-slate-400'
                 )}
             >

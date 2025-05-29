@@ -49,33 +49,40 @@ export const Navbar = () => {
         }
     }
     return (
-        <nav className="fixed z-10 flex h-20 w-full items-center justify-center bg-white px-6 text-gray-800 shadow-md">
+        <nav className="fixed z-10 flex h-20 w-full items-center justify-center bg-primary px-6 text-gray-800 shadow-md">
             <div className="flex w-full items-center justify-between">
                 <Link
                     className="flex items-center justify-center gap-2"
                     href="/"
                 >
-                    <StorwayLogo width={70} />
-                    <h1 className="text-4xl font-semibold">Storway</h1>
+                    <StorwayLogo width={110} />
+                    {/* <h1 className="text-4xl font-semibold">Storway</h1> */}
                 </Link>
 
                 <div className="hidden space-x-6 text-xl md:flex">
                     <Link
                         href="/"
-                        className="cursor-pointer hover:text-gray-400 hover:underline"
+                        className="text-white hover:underline"
                     >
                         {navigation?.home}
                     </Link>
                     <Link
                         href="#about"
-                        className="cursor-pointer hover:text-gray-400 hover:underline"
+                        className="text-white hover:underline"
                         onClick={handleClickAbout}
                     >
                         {navigation?.aboutUs}
                     </Link>
+                    <Link
+                        href="/contact"
+                        className="text-white hover:underline"
+                        onClick={handleClickAbout}
+                    >
+                        {navigation?.contactUs}
+                    </Link>
                 </div>
                 <div className="flex gap-4">
-                    <ContactButton hidden />
+                    {/* <ContactButton hidden /> */}
                     <LanguageChange />
                 </div>
                 {/* Mobile Menu Button */}

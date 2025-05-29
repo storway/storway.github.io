@@ -5,6 +5,7 @@ import { About } from './_components/about/About'
 import { Metadata } from 'next'
 import { SITE_CONFIG, SUPPORTED_LOCALES } from './config/config'
 import Script from 'next/script'
+import { PreFooter } from './_components/prefooter'
 
 export function generateStaticParams() {
     return SUPPORTED_LOCALES.map((locale: any) => ({ locale }))
@@ -36,6 +37,7 @@ export default function Index() {
             <DigiCartShowcase />
             <Promises />
             <About />
+            <PreFooter />
         </main>
     )
 }
