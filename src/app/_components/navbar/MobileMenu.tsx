@@ -43,7 +43,7 @@ export const MobileMenu = ({
     const languageLabels: Record<SupportedLanguages, string> = {
         en: 'English',
         fr: 'Français',
-        de: 'Deutsch',
+        // de: 'Deutsch',
         // Add new languages here
     }
 
