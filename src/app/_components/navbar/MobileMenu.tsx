@@ -48,7 +48,7 @@ export const MobileMenu = ({
     }
 
     return (
-        <div className="absolute right-0 top-20 z-20 flex w-full flex-col items-center justify-center space-y-4 border-t border-gray-500 bg-gray-100 px-2 py-4 shadow-lg md:hidden">
+        <div className="absolute right-0 top-20 z-20 flex w-full flex-col items-center justify-center space-y-4 border-t border-white bg-white px-2 py-4 shadow-lg md:hidden">
             {showLanguageChange ? (
                 <div className="flex flex-col gap-4">
                     {supportedLanguages?.map((lang) => (

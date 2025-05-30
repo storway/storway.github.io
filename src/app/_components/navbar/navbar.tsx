@@ -86,7 +86,7 @@ export const Navbar = () => {
                 </div>
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden"
+                    className="md:hidden text-white"
                     onClick={handleClick}
                     aria-label="Toggle menu"
                 >

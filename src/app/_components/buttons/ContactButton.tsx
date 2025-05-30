@@ -16,7 +16,7 @@ export const ContactButton = ({ hidden }: ContactButtonProps) => {
         <Link
             href="/contact"
             passHref
-            className={`text-white text-center btn-primary ${hidden ? 'hidden md:flex' : ''}`}
+            className={`text-white text-center btn-primary hover:bg-secondary ${hidden ? 'hidden md:flex' : ''}`}
         >
             {button?.contactUs}
         </Link>

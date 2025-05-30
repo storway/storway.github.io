@@ -33,7 +33,7 @@ const Footer = () => {
         <footer className="bg-primary pt-16 py-8 text-white">
             <div className='container mx-auto'>
                 <div className="pt-12 ps-6 pe-6"><hr></hr></div>
-                <div className="pb-12 pt-12 grid grid-cols-1 gap-12 px-6 md:grid-cols-3">
+                <div className="pb-12 pt-24 grid grid-cols-1 gap-12 px-6 md:grid-cols-3">
                     {/* Column 1: Logo & Description */}
                     <div>
                         <div className="flex items-center justify-start gap-1">
