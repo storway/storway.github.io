@@ -62,20 +62,20 @@ export const Navbar = () => {
                 <div className="hidden space-x-6 text-xl md:flex">
                     <Link
                         href="/"
-                        className="text-white hover:underline"
+                        className="text-white hover:underline font-light"
                     >
                         {navigation?.home}
                     </Link>
                     <Link
                         href="#about"
-                        className="text-white hover:underline"
+                        className="text-white hover:underline font-light"
                         onClick={handleClickAbout}
                     >
                         {navigation?.aboutUs}
                     </Link>
                     <Link
                         href="/contact"
-                        className="text-white hover:underline"
+                        className="text-white hover:underline font-light"
                         onClick={handleClickAbout}
                     >
                         {navigation?.contactUs}

@@ -6,6 +6,9 @@ import { Metadata } from 'next'
 import { SITE_CONFIG, SUPPORTED_LOCALES } from './config/config'
 import Script from 'next/script'
 import { PreFooter } from './_components/prefooter'
+import { HowItWorks } from './_components/howitworks'
+import { HomeProduct } from './_components/home-product'
+import { FullImageSection } from './_components/full-image-section'
 
 export function generateStaticParams() {
     return SUPPORTED_LOCALES.map((locale: any) => ({ locale }))
@@ -34,6 +37,10 @@ export default function Index() {
                 strategy="beforeInteractive" // Can control when the script loads
             />
             <HeroPost />
+            
+            <HowItWorks />
+            {/* <HomeProduct /> */}
+            <FullImageSection />
             <DigiCartShowcase />
             <Promises />
             <About />

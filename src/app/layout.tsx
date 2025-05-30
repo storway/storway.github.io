@@ -1,14 +1,39 @@
 import { CMS_NAME, HOME_OG_IMAGE_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
 // import { Roboto } from 'next/font/google'
+// import { Playfair_Display } from 'next/font/google'
 import cn from 'classnames'
 import './globals.css'
 import { Navbar } from './_components/navbar/navbar'
 import Footer from './_components/footer'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { ComingSoonPage } from './_components/comingSoon/ComingSoonPage'
+// import localFont from 'next/font/local'
 
 // const inter = Roboto
+// const playfair = Playfair_Display({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   style: 'italic'
+// })
+
+
+// const helvetica = localFont({
+//   src: [
+//     {
+//       path: '/fonts/Helvetica.woff2',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: '/fonts/Helvetica-Bold.woff2',
+//       weight: '700',
+//       style: 'normal',
+//     }
+//   ],
+//   variable: '--font-helvetica',
+// })
+
 
 export const metadata: Metadata = {
     title: `${CMS_NAME}`,
@@ -79,7 +104,8 @@ export default function RootLayout({
             <body
                 className={cn(
                     // inter.className,
-                    'dark:bg-slate-900 dark:text-slate-400'
+                    // playfair.className,
+                    'font-helvetica dark:bg-slate-900 dark:text-slate-400'
                 )}
             >
                 {/* <ComingSoonPage /> */}

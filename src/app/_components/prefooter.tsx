@@ -20,7 +20,7 @@ export function PreFooter() {
         }}>
             <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:px-24 lg:gap-6 lg:py-28">
                 <div className="flex flex-col space-y-4">
-                    <div className="mb-4 space-y-2 text-7xl text-center text-white font-semibold">
+                    <div className="text-5xl md:text-7xl mb-4 space-y-2 text-center text-white font-playfair italic">
                         Ready to simplify your customers' shopping experience? 
                     </div>
                 </div>

@@ -23,7 +23,7 @@ export function HeroPost() {
             <div className="md:py-22 relative grid h-screen items-center gap-14 px-6 py-32 md:px-24 lg:gap-6 lg:py-28">
                 <div className="flex flex-col space-y-4">
                     <div className="mb-4 space-y-2">
-                        <HeroHeading className="text-5xl" heading={hero?.heading} />
+                        <HeroHeading className="font-playfair italic text-5xl" heading={hero?.heading} />
                         {/* <HeroText className="text-white" text={hero?.text1} />
                         <HeroText className="text-white text-center" text={hero?.text2} />
                         <HeroText className="text-white" text={hero?.text3} /> */}

@@ -9,7 +9,7 @@ export const translations = {
             quickLinks: 'Quick Links',
             copyright: ' All rights reserved.',
             privacyPolicy: 'Privacy Policy',
-            businessDescription: 'Storway is a smart retail solution that enhances the in-store shopping experience with computer vision-enabled cart screens. It helps customers shop faster by automatically detecting products as they’re placed in the cart—no scanning required.For retailers, it offers powerful insights, built-in advertising space, and increased security, all while reducing checkout time and boosting customer satisfaction.',
+            businessDescription: 'Storway is a smart retail solution that enhances the in-store shopping experience with Ai and smart cart creating an unique VIP experience. Boost your customer satisfaction.',
             info: 'Info',
         },
         hero: {
@@ -21,7 +21,7 @@ export const translations = {
         showcase: {
             heading: 'Smart cart. Smarter journey.',
 
-            effortlessShopping: 'Designed to transform how customers move, shop, and check out.',
+            effortlessShopping: 'The Storway Device',
             steps: [
                 'Clip on,',
                 'scan items,',
@@ -29,16 +29,13 @@ export const translations = {
                 'and pay.',
             ],
 
-            introducingDigiCart: 'Introducing the DigiCart',
-            digiCartDescription: 'Light, durable, and easy to clip on.',
+            introducingDigiCart: 'Real-Time Offers and Content',
+            digiCartDescription: 'Right message. Right place. Right time. Storway turns each cart into a dynamic media channel. Engage shoppers with in-the-moment offers, cross-sells, or branded content—displayed at the exact point of decision. It\'s a new layer of visibility that drives conversions and unlocks monetization potential.',
             digiCartSmart: 'Smart, powerful, and flexible.',
 
-            retailMediaHeading:
-                'Retail Media Display: Smart Ads, Instant Impact',
+            retailMediaHeading:'Storway analytics',
             retailMediaDescription: [
-                'Engage shoppers with targeted ads while they shop.',
-                'Deliver real-time deals and product info.',
-                'Turn every cart into a dynamic retail media platform.',
+                'Intuitive for shoppers. Powerful for retailers. The on-cart interface is designed for ease, offering a frictionless experience to customers. Behind the scenes, Storway\'s platform gives retailers full control—from content scheduling to fleet management and real-time analytics—making smart operations effortless at scale.',
             ],
 
             securityHeading:
