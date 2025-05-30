@@ -32,22 +32,22 @@ export const Navbar = () => {
         setShowLanguageChange(false)
     }
 
-    const handleClickAbout = (
-        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    ) => {
-        e.preventDefault()
-        setIsOpen(false)
+    // const handleClickAbout = (
+    //     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    // ) => {
+    //     e.preventDefault()
+    //     setIsOpen(false)
 
-        if (pathname === '/') {
-            const aboutSection = document.getElementById('about')
-            if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: 'smooth' })
-            }
-        } else {
-            // Navigate to home, then scroll after page loads
-            router.push('/#about')
-        }
-    }
+    //     if (pathname === '/') {
+    //         const aboutSection = document.getElementById('about')
+    //         if (aboutSection) {
+    //             aboutSection.scrollIntoView({ behavior: 'smooth' })
+    //         }
+    //     } else {
+    //         // Navigate to home, then scroll after page loads
+    //         router.push('/#about')
+    //     }
+    // }
     return (
         <nav className="fixed z-10 flex h-20 w-full items-center justify-center bg-primary px-6 text-gray-800 shadow-md">
             <div className="flex w-full items-center justify-between">
@@ -67,9 +67,9 @@ export const Navbar = () => {
                         {navigation?.home}
                     </Link>
                     <Link
-                        href="#about"
+                        href="/about"
                         className="text-white hover:underline font-light"
-                        onClick={handleClickAbout}
+                        // onClick={handleClickAbout}
                     >
                         {navigation?.aboutUs}
                     </Link>
@@ -100,7 +100,7 @@ export const Navbar = () => {
                     setShowLanguageChange={setShowLanguageChange}
                     handleLanguageChange={handleLanguageChange}
                     setIsOpen={setIsOpen}
-                    handleClickAbout={handleClickAbout}
+                    // handleClickAbout={handleClickAbout}
                 />
             )}
         </nav>

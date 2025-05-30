@@ -1,7 +1,7 @@
 import { HeroPost } from '@/app/_components/hero-post'
 import Promises from './_components/promises/Promises'
 import { DigiCartShowcase } from './_components/digiCartShowcase/DigiCartShowcase'
-import { About } from './_components/about/About'
+import { About } from './about/About'
 import { Metadata } from 'next'
 import { SITE_CONFIG, SUPPORTED_LOCALES } from './config/config'
 import Script from 'next/script'
@@ -47,7 +47,7 @@ export default function Index() {
             <DigiCartShowcase />
             {/* <Promises /> */}
             <KeyBenefit />
-            <About />
+            {/* <About /> */}
             <PreFooter />
         </main>
     )

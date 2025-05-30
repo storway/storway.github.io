@@ -33,11 +33,23 @@ export const ContactForm = forwardRef<HTMLDivElement>(
         }
 
         return (
+
             <section
+                id="about"
+                ref={ref}
+                className="flex w-full items-center justify-center bg-gray-50 px-6 py-32 md:px-12 lg:px-24"
+            >
+            {/* <div className="mx-auto max-w-6xl px-6 py-16 text-center"> */}
+                {/* <h2 className="text-5xl md:text-7xl font-playfair italic mb-12 text-center text-primary">
+                    {aboutUs?.heading}
+                </h2> */}
+
+
+            {/* <section
                 ref={ref}
                 className="md:py-18 flex w-full items-center justify-center bg-white py-32"
-            >
-                <div className="container px-4 md:px-6">
+            > */}
+                <div className="container px-4 md:px-6 mx-auto max-w-6xl px-6 py-16 text-left">
                     <div className="mb-8 text-center">
                         <h2 className="text-5xl md:text-7xl font-playfair italic mb-12 text-center text-secondary">
                             {contact?.heading}

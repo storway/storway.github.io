@@ -68,9 +68,9 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="#about"
+                                    href="/about"
                                     className="text-white hover:undehover:underline"
-                                    onClick={handleClickAbout}
+                                    // onClick={handleClickAbout}
                                 >
                                     {navigation?.aboutUs}
                                 </Link>

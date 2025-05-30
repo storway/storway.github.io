@@ -11,9 +11,9 @@ interface MobileMenuProps {
     handleLanguageChange: (string: SupportedLanguages) => void
     setShowLanguageChange: Dispatch<SetStateAction<boolean>>
     setIsOpen: Dispatch<SetStateAction<boolean>>
-    handleClickAbout: (
-        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    ) => void
+    // handleClickAbout: (
+    //     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    // ) => void
 }
 
 export const MobileMenu = ({
@@ -21,7 +21,7 @@ export const MobileMenu = ({
     handleLanguageChange,
     setShowLanguageChange,
     setIsOpen,
-    handleClickAbout,
+    // handleClickAbout,
 }: MobileMenuProps) => {
     const { language } = useLanguage()
     const { button, navigation } = translations[language as SupportedLanguages]
@@ -29,9 +29,9 @@ export const MobileMenu = ({
     const links = [
         { href: '/', text: 'Home', handler: () => setIsOpen(false) },
         {
-            href: '#about',
+            href: '/about',
             text: navigation?.aboutUs,
-            handler: handleClickAbout,
+            handler: () => setIsOpen(false),
         },
         {
             href: '/contact',
