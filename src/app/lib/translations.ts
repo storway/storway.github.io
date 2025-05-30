@@ -38,6 +38,13 @@ export const translations = {
             step3text: 'Scan each item while you add it to your cart.',
             step4text: 'No lines, no hassle—just tap to pay when you\'re done.',
         },
+        keybenefit:{
+            title: 'Key Benefit',
+            description: 'Designed to transform how customers move, shop, and check out.',
+            item1: 'Reduce Fraud',
+            item2: 'Increase Basket Size',
+            item3: 'Boost Sale',
+        },
         showcase: {
             heading: 'Simple interface. Endless in-store possibilities.',
             description: 'From smart checkout and real-time product info to order management and list syncing—Storway transforms the retail floor into a connected, digital experience.',
@@ -142,6 +149,13 @@ export const translations = {
             step2text: 'Attachez-le à votre chariot. Connectez-vous si vous êtes membre.',
             step3text: 'Scannez chaque article tout en l\'ajoutant à votre chariot.',
             step4text: 'Pas de file d\'attente, pas de malin — paiement instantané.',
+        },
+        keybenefit: {
+            title: 'Les points forts',
+            description: 'Conçu pour transformer la façon dont les clients se déplacent, achètent et paient.',
+            item1: 'Réduction de la fraude',
+            item2: 'Augmentation de la taille du panier',
+            item3: 'Amélioration des ventes',
         },
         showcase: {
             heading: 'Interface simple. Une multitude de possibilitiés.',
