@@ -34,9 +34,7 @@ export const translations = {
             digiCartSmart: 'Smart, powerful, and flexible.',
 
             retailMediaHeading:'Storway analytics',
-            retailMediaDescription: [
-                'Intuitive for shoppers. Powerful for retailers. The on-cart interface is designed for ease, offering a frictionless experience to customers. Behind the scenes, Storway\'s platform gives retailers full control—from content scheduling to fleet management and real-time analytics—making smart operations effortless at scale.',
-            ],
+            retailMediaDescription: 'Intuitive for shoppers. Powerful for retailers. The on-cart interface is designed for ease, offering a frictionless experience to customers. Behind the scenes, Storway\'s platform gives retailers full control—from content scheduling to fleet management and real-time analytics—making smart operations effortless at scale.',
 
             securityHeading:
                 'Protecting Your Business, Customers & Data with Confidence.',
@@ -109,7 +107,7 @@ export const translations = {
             heading: 'Un chariot intelligent...',
 
             effortlessShopping:
-                '... pour faire les courses dans des conditions optimales ',
+                'Le dispositif Storway',
             steps: [
                 'Clipsez le DigiCart,',
                 'scannez les articles,',
@@ -117,17 +115,12 @@ export const translations = {
                 'et payez.',
             ],
 
-            introducingDigiCart: 'Le DigiCart',
-            digiCartDescription: 'Léger, durable et facile à clipser.',
+            introducingDigiCart: 'Offres et contenus en temps réel',
+            digiCartDescription: 'Le bon message. Au bon endroit. Au bon moment. Storway transforme chaque chariot en un canal média dynamique. Interagissez avec les clients grâce à des offres en temps réel, des ventes croisées ou du contenu de marque — affichés au moment précis de la décision d\'achat. C\'est une nouvelle couche de visibilité qui stimule les conversions et libère un potentiel de monétisation. Intelligent, puissant et flexible.',
             digiCartSmart: 'Intelligent, puissant et flexible.',
 
-            retailMediaHeading:
-                'Affichage Retail Media : Publicités individualisées, impact instantané',
-            retailMediaDescription: [
-                'Des annonces ciblées, au lieu et au moment idéal',
-                'Informations produits et offres en temps réel.',
-                'Transformez le caddie en plateforme de retail média.',
-            ],
+            retailMediaHeading:'Analytique Storway',
+            retailMediaDescription: 'Intuitif pour les clients. Puissant pour les enseignes. L\'interface intégrée au chariot est conçue pour être simple d’utilisation, offrant une expérience fluide et sans friction aux acheteurs. En coulisses, la plateforme Storway donne aux distributeurs un contrôle total — de la programmation du contenu à la gestion de flotte et aux analyses en temps réel — rendant les opérations intelligentes faciles à déployer à grande échelle.',
 
             securityHeading:
                 'Protéger votre entreprise, vos clients et leurs données en toute confiance.',

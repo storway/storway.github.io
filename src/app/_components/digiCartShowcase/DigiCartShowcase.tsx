@@ -60,14 +60,7 @@ export const DigiCartShowcase = () => {
             textEl: (
                 <>
                     <ShowcaseText
-                        text={showcase?.retailMediaDescription?.[0]}
-                    />
-                    <ShowcaseText
-                        text={showcase?.retailMediaDescription?.[1]}
-                    />
-
-                    <ShowcaseText
-                        text={showcase?.retailMediaDescription?.[2]}
+                        text={showcase?.retailMediaDescription}
                     />
                 </>
             ),

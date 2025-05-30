@@ -19,7 +19,7 @@ export const ShowcaseCard = ({
             className={`mb-4 md:mb-6 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8`}
         >
             <div className={`flex flex-col justify-center ${!reverse ? 'md:order-2' : 'md:order-1'}`}>
-                <div className='p-6 md:p-24'>
+                <div className='p-6 md:p-14'>
                     <h3 className="mb-4 text-3xl font-playfair text-primary lg:text-4xl">
                         {headline}
                     </h3>
