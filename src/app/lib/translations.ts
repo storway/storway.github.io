@@ -22,7 +22,7 @@ export const translations = {
         },
         smartjourney:{
             title: 'Smart cart, smart journey.',
-            subheader: 'Designed to transform how customers move, shop, and check out.',
+            subheader: 'Designed to transform how customers move, shop.',
             keymatrix1: 'Increase in average basket value',
             keymatrix2: 'Time saved at checkout',
             keymatrix3: 'Customer satisfaction rate',
@@ -40,7 +40,7 @@ export const translations = {
         },
         keybenefit:{
             title: 'Key Benefit',
-            description: 'Designed to transform how customers move, shop, and check out.',
+            description: 'Designed to transform how customers shop.',
             item1: 'Reduce Fraud',
             item2: 'Increase Basket Size',
             item3: 'Boost Sale',
