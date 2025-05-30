@@ -17,9 +17,9 @@ export const LanguageChange = () => {
     }
 
     return (
-        <div className="relative hidden text-left md:inline-block">
+        <div className="relative hidden text-left md:inline-block font-light">
             <button
-                className="flex w-20 items-center gap-1 rounded-lg border-2 border-white px-2 py-2 text-white"
+                className="flex w-20 items-center gap-1 rounded-lg border-white px-2 py-2 text-white"
                 onClick={handleOpenLanguage}
             >
                 <Globe className="h-8 w-6" />

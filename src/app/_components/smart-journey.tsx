@@ -8,7 +8,7 @@ import { translations } from '@/app/lib/translations'
 export const SmartJourney = () => {
     const { language, setLanguage } = useLanguage()
 
-    const { showcase } = translations[language as SupportedLanguages]
+    const { smartjourney } = translations[language as SupportedLanguages]
 
     return (
         <section className="mx-auto bg-white px-6 py-32 md:px-24">
@@ -17,10 +17,10 @@ export const SmartJourney = () => {
                     {showcase?.heading}
                 </h2> */}
                 <h2 className="text-5xl md:text-7xl font-playfair italic mb-12 text-center text-primary">
-                    Smart cart. Smarter journey.
+                    {smartjourney?.title}
                 </h2>
-                <div className='text-center text-black'>
-                    Designed to transform how customers move, shop, and check out.
+                <div className='text-center text-black text-lg'>
+                    {smartjourney?.subheader}
                 </div>
 
                 <div className='pt-12'>
@@ -38,22 +38,22 @@ export const SmartJourney = () => {
                 <div className="flex flex-col items-center text-center">
                     <hr className='bg-secondary h-[2px] w-[100%]'></hr>
                     <div className="mt-12 text-4xl md:text-7xl text-secondary mb-2">+12%</div>
-                    <p className="pt-12 text-md text-black">
-                       Hausse du panier moyen
+                    <p className="pt-12 text-lg text-black">
+                       {smartjourney?.keymatrix1}
                     </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
                     <hr className='bg-secondary h-[2px] w-[100%]'></hr>
                     <div className="mt-12  text-4xl md:text-7xl text-secondary mb-2">+60%</div>
-                    <p className="pt-12 text-md text-black">
-                        Temps gagné en caisse
+                    <p className="pt-12 text-lg text-black">
+                        {smartjourney?.keymatrix2}
                     </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
                     <hr className='bg-secondary h-[2px] w-[100%]'></hr>
                     <div className="mt-12  text-4xl md:text-7xl text-secondary mb-2">+94%</div>
-                    <p className="pt-12 text-md text-black">
-                        Taux de satisfaction client
+                    <p className="pt-12 text-lg text-black">
+                        {smartjourney?.keymatrix3}
                     </p>
                 </div>
             </div>

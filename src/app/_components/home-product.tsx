@@ -14,7 +14,7 @@ export function HomeProduct() {
         <section className="bg-white text-white py-32">
             <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-5xl md:text-7xl font-playfair italic mb-12 text-center text-primary">Simple interface. Endless in-store possibilities.</h2>
-            <div className='text-center text-black'>
+            <div className='text-center text-black text-lg'>
                 From smart checkout and real-time product info to order management and list syncing—Storway transforms the retail floor into a connected, digital experience.
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10">

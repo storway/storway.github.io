@@ -36,9 +36,9 @@ const Footer = () => {
                 <div className="pb-12 pt-24 grid grid-cols-1 gap-12 px-6 md:grid-cols-3">
                     {/* Column 1: Logo & Description */}
                     <div>
-                        <div className="flex items-center justify-start gap-1">
+                        <h3 className="flex items-center justify-start gap-1 pb-6">
                             <StorwayLogo width={160} />
-                        </div>
+                        </h3>
                         <p className="mt-2 text-white text-justify">
                             {footer?.businessDescription}
                         </p>
@@ -46,7 +46,7 @@ const Footer = () => {
 
                     {/* Column 2: Quick Links */}
                     <div>
-                        <h3 className="text-lg font-semibold text-white">
+                        <h3 className="text-lg font-semibold text-white pb-6">
                             {footer?.quickLinks}
                         </h3>
                         <ul className="mt-2">
@@ -79,7 +79,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold text-white">
+                        <h3 className="text-lg font-semibold text-white pb-6">
                             {footer?.info}
                         </h3>
                         <p>

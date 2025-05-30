@@ -29,14 +29,14 @@ export const MobileMenu = ({
     const links = [
         { href: '/', text: 'Home', handler: () => setIsOpen(false) },
         {
-            href: '/contact',
-            text: button?.contactUs,
-            handler: () => setIsOpen(false),
-        },
-        {
             href: '#about',
             text: navigation?.aboutUs,
             handler: handleClickAbout,
+        },
+        {
+            href: '/contact',
+            text: button?.contactUs,
+            handler: () => setIsOpen(false),
         },
     ]
 
