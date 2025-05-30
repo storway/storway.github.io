@@ -7,7 +7,7 @@ interface HeroHeadingProps {
 
 export const HeroHeading = ({ heading, className }: HeroHeadingProps) => {
     return (
-        <h1 className={`text-5xl md:text-7xl text-center text-white ${className}`}>
+        <h1 className={`text-5xl md:text-7xl text-center text-white animate-fadeIn ${className}`}>
             {heading}
         </h1>
     )

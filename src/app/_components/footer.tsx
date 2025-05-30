@@ -82,6 +82,10 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold text-white">
                             {footer?.info}
                         </h3>
+                        <p>
+                            12, Rue Charles Péguy, 64000 Pau, France
+                            www.storway.com
+                        </p>
                     </div>
                     {/* !!!!! Keep for future implementation !!!! */}
                     {/* Column 3: Social Media */}

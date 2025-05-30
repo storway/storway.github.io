@@ -59,7 +59,7 @@ export const Navbar = () => {
                     {/* <h1 className="text-4xl font-semibold">Storway</h1> */}
                 </Link>
 
-                <div className="hidden space-x-6 text-xl md:flex">
+                <div className="hidden space-x-6 text-lg md:flex">
                     <Link
                         href="/"
                         className="text-white hover:underline font-light"
@@ -76,7 +76,6 @@ export const Navbar = () => {
                     <Link
                         href="/contact"
                         className="text-white hover:underline font-light"
-                        onClick={handleClickAbout}
                     >
                         {navigation?.contactUs}
                     </Link>

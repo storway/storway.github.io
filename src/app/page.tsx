@@ -9,6 +9,7 @@ import { PreFooter } from './_components/prefooter'
 import { HowItWorks } from './_components/howitworks'
 import { HomeProduct } from './_components/home-product'
 import { FullImageSection } from './_components/full-image-section'
+import { SmartJourney } from './_components/smart-journey'
 
 export function generateStaticParams() {
     return SUPPORTED_LOCALES.map((locale: any) => ({ locale }))
@@ -38,11 +39,12 @@ export default function Index() {
             />
             <HeroPost />
             
+            <SmartJourney />
             <HowItWorks />
             {/* <HomeProduct /> */}
             <FullImageSection />
             <DigiCartShowcase />
-            <Promises />
+            {/* <Promises /> */}
             <About />
             <PreFooter />
         </main>

@@ -18,7 +18,7 @@ export const About = forwardRef<HTMLDivElement>(
                 className="flex items-center justify-center bg-gray-50 px-6 py-32 md:px-12 lg:px-24"
             >
                 <div className="mx-auto max-w-6xl px-6 py-16 text-center">
-                    <h2 className="mb-6 text-2xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
+                    <h2 className="text-5xl md:text-7xl font-playfair italic mb-12 text-center text-primary">
                         {aboutUs?.heading}
                     </h2>
                     <p className="mx-auto max-w-3xl text-lg">

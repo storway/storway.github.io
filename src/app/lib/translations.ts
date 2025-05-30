@@ -9,7 +9,7 @@ export const translations = {
             quickLinks: 'Quick Links',
             copyright: ' All rights reserved.',
             privacyPolicy: 'Privacy Policy',
-            businessDescription: 'Storway is a smart retail solution that enhances the in-store shopping experience with Ai and smart cart creating an unique VIP experience. Boost your customer satisfaction.',
+            businessDescription: 'Storway is a smart retail solution that enhances the in-store shopping experience with AI and a smart cart. Boost your customer satisfaction.',
             info: 'Info',
         },
         hero: {
